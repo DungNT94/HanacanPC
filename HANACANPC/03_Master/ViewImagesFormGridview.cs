@@ -41,7 +41,8 @@ namespace HANACANPC._03_Master
             using (var client = new HttpClient())
             {
                 //string url = $"http://10.84.30.37:8686/Image/" + imageName; //Wifi guest
-                string url = $"http://10.84.26.06:8686/Image/" + imageName; //Wifi Office
+                //string url = $"http://10.84.26.06:8686/Image/" + imageName; //Wifi Office
+                string url = $"http://localhost:8686/Image/" + imageName; //Wifi sato
                 var response = await client.GetAsync(url);
                 using (WebClient webClient = new WebClient())
                 {

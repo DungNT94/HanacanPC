@@ -37,11 +37,11 @@ namespace HANACANPC._03_Master
             txtManagementCode.Text = GloUserMaster.MCode;
             txtLocationName.Text = GloUserMaster.LName;
             txtSecurityBoxIP.Text = GloUserMaster.SAddress;
-            if (GloUserMaster.TierType == "0001 0000 0006 01 06 03E8 000A")
+            if (GloUserMaster.TierType == "000100000006010603E8000A")
             {
                 rdoTwoTier.Checked = true;
             }
-            else if (GloUserMaster.TierType == "0001 0000 0006 01 06 0000 000A")
+            else if (GloUserMaster.TierType == "00010000000601060000000A")
             {
                 rdoOneTier.Checked = true;
             }
@@ -59,11 +59,11 @@ namespace HANACANPC._03_Master
             //Gắn dữ liệu sau khi check radio tầng
             if (rdoTwoTier.Checked == true)
             {
-                UpdateTierType = "0001 0000 0006 01 06 03E8 000A";
+                UpdateTierType = "000100000006010603E8000A";
             }
             else if (rdoOneTier.Checked == true)
             {
-                UpdateTierType = "0001 0000 0006 01 06 0000 000A";
+                UpdateTierType = "00010000000601060000000A";
             }
             else
             {

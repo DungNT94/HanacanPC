@@ -178,9 +178,9 @@ namespace HANACANPC._03_Master
                     if (DialogResult.Yes == rs)
                     {
                         //Check vượt quá số ký tự cho phép
-                        if (txtDesignCode.Text.Length > 10 || txtEAN.Text.Length>13)
+                        if (txtDesignCode.Text.Length != 5 || txtEAN.Text.Length!=13)
                         {
-                            MessageBox.Show("Số ký tự tối đã của Design Code là 10 và EAN Code là 13 ( The maximum number of characters for Design Code is 10 and EAN Code is 13' ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Số ký tự của Design Code là 5 và EAN Code là 13 ( The number of characters for Design Code is 5 and EAN Code is 13' ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                         else
@@ -193,9 +193,9 @@ namespace HANACANPC._03_Master
                 else
                 {
                     //Check vượt quá số ký tự cho phép
-                    if (txtDesignCode.Text.Length > 10 || txtEAN.Text.Length > 13)
+                    if (txtDesignCode.Text.Length !=5  || txtEAN.Text.Length != 13)
                     {
-                        MessageBox.Show("Số ký tự tối đã của Design Code là 10 và EAN Code là 13 ( The maximum number of characters for Design Code is 10 and EAN Code is 13' ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Số ký tự của Design Code là 5 và EAN Code là 13 ( The number of characters for Design Code is 5 and EAN Code is 13' ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
                     }
                     else

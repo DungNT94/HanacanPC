@@ -195,9 +195,9 @@ namespace HANACANPC._03_Master
             }
             else
             {
-                if (txtEAN.Text.Length > 13)
+                if (txtEAN.Text.Length != 13)
                 {
-                    MessageBox.Show("Mã EAN có tối đa có 13 ký tự ( EAN Code has maximum 13 characters ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Mã EAN code có 13 ký tự ( EAN Code has 13 characters ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else

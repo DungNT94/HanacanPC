@@ -77,7 +77,7 @@ namespace HANACANPC._01_LogData
                 {
                     conn.Open();
                     cmd.Connection = conn;
-                    cmd.CommandText = "Update HTLock set HTNo='';";
+                    cmd.CommandText = "Truncate table HTLock;";
                     cmd.ExecuteNonQuery();
                     conn.Close();
                 }
