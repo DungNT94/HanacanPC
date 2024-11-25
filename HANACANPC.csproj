@@ -1,0 +1,973 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E49D506C-02A7-4E3B-AD0B-694D5094E4C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HANACANPC</RootNamespace>
+    <AssemblyName>HANACANPC</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>HANACANPC.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.3.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=5.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.5.1.1\lib\net462\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.ExpressApp.Win.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Office.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v20.1.Export, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v20.1.UI, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpf.Controls.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.Layout.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpf.LayoutControl.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGauges.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v20.1.Extensions, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v20.1.Core, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v20.1, Version=20.1.14.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DotNetBarcode">
+      <HintPath>C:\Users\svs.dungtien.nguyen\AppData\Local\Programs\Zalo\Zalo-24.9.4\DotNetBarcode.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\packages\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="GemBox.Spreadsheet, Version=49.0.0.1839, Culture=neutral, PublicKeyToken=b1b72c69714d4847, processorArchitecture=MSIL">
+      <HintPath>..\packages\GemBox.Spreadsheet.49.0.1839\lib\net462\GemBox.Spreadsheet.dll</HintPath>
+    </Reference>
+    <Reference Include="HarfBuzzSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\HarfBuzzSharp.7.3.0\lib\net462\HarfBuzzSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IO.RecyclableMemoryStream, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IO.RecyclableMemoryStream.3.0.1\lib\netstandard2.0\Microsoft.IO.RecyclableMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NSubstitute, Version=5.1.0.0, Culture=neutral, PublicKeyToken=92dd2e9066daa5ca, processorArchitecture=MSIL">
+      <HintPath>..\packages\NSubstitute.5.1.0\lib\net462\NSubstitute.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="SkiaSharp, Version=2.88.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+      <HintPath>..\packages\SkiaSharp.2.88.6\lib\net462\SkiaSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.5.0.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.8.0.4\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Controls.Ribbon" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="00_Login\frmPassSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00_Login\frmPassSetting.Designer.cs">
+      <DependentUpon>frmPassSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_LogData\frmErrorCompensation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_LogData\frmErrorCompensation.Designer.cs">
+      <DependentUpon>frmErrorCompensation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_LogData\frmErrorResorting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_LogData\frmErrorResorting.Designer.cs">
+      <DependentUpon>frmErrorResorting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\ViewImages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\ViewImages.Designer.cs">
+      <DependentUpon>ViewImages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\ViewImagesFormGridview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\ViewImagesFormGridview.Designer.cs">
+      <DependentUpon>ViewImagesFormGridview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04_Setting\frmSystemSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="04_Setting\frmSystemSetting.Designer.cs">
+      <DependentUpon>frmSystemSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomGridview.cs" />
+    <Compile Include="FileConfig.cs" />
+    <Compile Include="01_LogData\frmCompensationLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_LogData\frmCompensationLog.Designer.cs">
+      <DependentUpon>frmCompensationLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmDesignMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmDesignMaster.Designer.cs">
+      <DependentUpon>frmDesignMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmDesignMasterADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmDesignMasterADD.Designer.cs">
+      <DependentUpon>frmDesignMasterADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmDesignMasterUPDATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmDesignMasterUPDATE.Designer.cs">
+      <DependentUpon>frmDesignMasterUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmLocationMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmLocationMaster.Designer.cs">
+      <DependentUpon>frmLocationMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmLocationMasterADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmLocationMasterADD.Designer.cs">
+      <DependentUpon>frmLocationMasterADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmLocationMasterUPDATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmLocationMasterUPDATE.Designer.cs">
+      <DependentUpon>frmLocationMasterUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00_Login\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00_Login\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00_Login\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00_Login\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmMasterMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmMasterMaintenance.Designer.cs">
+      <DependentUpon>frmMasterMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="02_Print\frmPrintQR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="02_Print\frmPrintQR.Designer.cs">
+      <DependentUpon>frmPrintQR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01_LogData\frmResortingLog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_LogData\frmResortingLog.Designer.cs">
+      <DependentUpon>frmResortingLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmUserMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmUserMaster.Designer.cs">
+      <DependentUpon>frmUserMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmUserMasterADD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmUserMasterADD.Designer.cs">
+      <DependentUpon>frmUserMasterADD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03_Master\frmUserMasterUPDATE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03_Master\frmUserMasterUPDATE.Designer.cs">
+      <DependentUpon>frmUserMasterUPDATE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Language.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResourceImages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceImages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources.vi-VN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.vi-VN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="01_LogData\frmWorkProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01_LogData\frmWorkProgress.Designer.cs">
+      <DependentUpon>frmWorkProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLConnection.cs" />
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="XtraReport1.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XtraReport1.Designer.cs">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="00_Login\frmLogin.bin-NG.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00_Login\frmPassSetting.resx">
+      <DependentUpon>frmPassSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_LogData\frmErrorCompensation.resx">
+      <DependentUpon>frmErrorCompensation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_LogData\frmErrorResorting.resx">
+      <DependentUpon>frmErrorResorting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\ViewImages.resx">
+      <DependentUpon>ViewImages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\ViewImagesFormGridview.resx">
+      <DependentUpon>ViewImagesFormGridview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04_Setting\frmSystemSetting.resx">
+      <DependentUpon>frmSystemSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_LogData\frmCompensationLog.resx">
+      <DependentUpon>frmCompensationLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmDesignMaster.resx">
+      <DependentUpon>frmDesignMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmDesignMasterADD.resx">
+      <DependentUpon>frmDesignMasterADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmDesignMasterUPDATE.resx">
+      <DependentUpon>frmDesignMasterUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmLocationMaster.resx">
+      <DependentUpon>frmLocationMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmLocationMasterADD.resx">
+      <DependentUpon>frmLocationMasterADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmLocationMasterUPDATE.resx">
+      <DependentUpon>frmLocationMasterUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00_Login\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00_Login\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmMasterMaintenance.resx">
+      <DependentUpon>frmMasterMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="02_Print\frmPrintQR.resx">
+      <DependentUpon>frmPrintQR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_LogData\frmResortingLog.resx">
+      <DependentUpon>frmResortingLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmUserMaster.resx">
+      <DependentUpon>frmUserMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmUserMasterADD.resx">
+      <DependentUpon>frmUserMasterADD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03_Master\frmUserMasterUPDATE.resx">
+      <DependentUpon>frmUserMasterUPDATE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01_LogData\frmWorkProgress.resx">
+      <DependentUpon>frmWorkProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ResourceImages.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceImages.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.vi-VN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.vi-VN.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XtraReport1.resx">
+      <DependentUpon>XtraReport1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\62955-pick-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Accept-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\accounting_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\accounting_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Action-db-add-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Add_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Add_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Add_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\AddCalculatedField_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\AddNewDataSource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Announcement_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Apply_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Apply_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Apply_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Apply_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Apply_32x323.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\AssignTo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Backward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\barcode_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\barcode_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\barcodes-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\BOCustomer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\bonote_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\bonote_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boorder_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boorder_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\bopermission_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\bopermission_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boproduct_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boproduct_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boproduct_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boproduct_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\bottomleftverticalinside_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\boxes-brown-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\box-out-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\bubble_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Build_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Button-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Cancel_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\changpass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\CheckBox_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\clear1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\clear11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Close_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Close_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Close_32x321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\close_32x322.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\company-building-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\converttorange_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\customer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\customer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Database-Table-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\DefaultPrinter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\DeleteList_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\DeleteList_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\DeleteList2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Download_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\EditingUnmergeCells_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\EditName_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\EditName_16x161.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\EditName_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\emptytablerowseparator_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\emptytablerowseparator_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\entry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\entry1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\erase.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\export.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\ExportToXLSX_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\ExportToXLSX_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\fileicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Find_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Folder-URL-History-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Folder-URL-History-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Ford-Pick-up-Truck-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\ForkLift-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Forward_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\functionscube_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\functionscube_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Group2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\groupbyresource_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\groupbyresource_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\home_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\home_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\iconfinder_119_Excel_logo_logos_4373169.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\iconfinder_icon-111-search_314478.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\iconfinder_logo_brand_brands_logos_excel_2993694.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\iconfinder_logo_brand_brands_logos_excel_29936941.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\iconfinder_print_172530.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\iconfinder_Streamline-70_185090.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\icons8-material-filled-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\icons8-print-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\icons8-remove-image-26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Inventory-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Inventory-maintenance-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\justice-balance-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\justice-balance-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Keys-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\log_off3232.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logo-tenma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logoxxx.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\lookup&amp;reference_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\maintenance-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\maintenance-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\MasterFilter_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\MovePivotTable_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\NewContact_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\new-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Notes_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Notes_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\open2_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\open2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\options-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\output-onlinepngtools.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Preview_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Preview_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Print_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\printer_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\printer_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Printer-Ink-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\qr_Sample.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\recylebin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Redo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Refresh_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\RemoveItem_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Right_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Sample.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\search1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\search11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Send_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\service_manager %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\service_manager.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\SIC.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\SpreadsheetInsertTable_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Undo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\up_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\up_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Up2_32x32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\usericon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\wholesale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\yello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\PrintButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\LogoHanacans.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logo-sato.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Logo_Sato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Setup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logout-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logout-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logout-16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logout-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logout-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\logout-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\SettingIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\LogoSatoAbout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Refresh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\52352_refresh_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Loading.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Loading1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\loading2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ResourcesImages\Loading3.gif" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HarfBuzzSharp.NativeAssets.macOS.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets'))" />
+    <Error Condition="!Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets'))" />
+  </Target>
+  <Import Project="..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\HarfBuzzSharp.NativeAssets.Win32.7.3.0\build\net462\HarfBuzzSharp.NativeAssets.Win32.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.macOS.2.88.6\build\net462\SkiaSharp.NativeAssets.macOS.targets')" />
+  <Import Project="..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets" Condition="Exists('..\packages\SkiaSharp.NativeAssets.Win32.2.88.6\build\net462\SkiaSharp.NativeAssets.Win32.targets')" />
+</Project>
