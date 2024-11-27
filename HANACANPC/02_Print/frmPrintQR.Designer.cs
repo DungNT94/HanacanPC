@@ -41,7 +41,6 @@ namespace HANACANPC._02_Print
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.CbxPrinter = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPrintQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit1)).BeginInit();
@@ -114,8 +113,6 @@ namespace HANACANPC._02_Print
             this.gridViewPrintQR.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridViewPrintQR.GridControl = this.gridControl2;
             this.gridViewPrintQR.Name = "gridViewPrintQR";
-            this.gridViewPrintQR.OptionsSelection.MultiSelect = true;
-            this.gridViewPrintQR.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridViewPrintQR.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
             this.gridViewPrintQR.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.gridViewPrintQR.OptionsView.ShowGroupPanel = false;
@@ -134,7 +131,7 @@ namespace HANACANPC._02_Print
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.VisibleIndex = 0;
             this.gridColumn2.Width = 252;
             // 
             // gridColumn3
@@ -149,7 +146,7 @@ namespace HANACANPC._02_Print
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 1;
             this.gridColumn3.Width = 922;
             // 
             // repositoryItemCheckedComboBoxEdit1
@@ -190,21 +187,11 @@ namespace HANACANPC._02_Print
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // CbxPrinter
-            // 
-            this.CbxPrinter.FormattingEnabled = true;
-            this.CbxPrinter.Location = new System.Drawing.Point(773, 44);
-            this.CbxPrinter.Name = "CbxPrinter";
-            this.CbxPrinter.Size = new System.Drawing.Size(212, 26);
-            this.CbxPrinter.TabIndex = 45;
-            this.CbxPrinter.SelectedIndexChanged += new System.EventHandler(this.CbxPrinter_SelectedIndexChanged);
-            // 
             // frmPrintQR
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1442, 679);
-            this.Controls.Add(this.CbxPrinter);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.btnPrint);
@@ -236,6 +223,5 @@ namespace HANACANPC._02_Print
         public DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.ComboBox CbxPrinter;
     }
 }

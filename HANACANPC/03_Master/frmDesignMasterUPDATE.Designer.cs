@@ -56,7 +56,7 @@ namespace HANACANPC._03_Master
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.Location = new System.Drawing.Point(650, 274);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(119, 44);
             this.btnDelete.TabIndex = 31;
@@ -68,7 +68,7 @@ namespace HANACANPC._03_Master
             // 
             this.btnCheck.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnCheck.Location = new System.Drawing.Point(498, 274);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(124, 44);
             this.btnCheck.TabIndex = 30;
@@ -80,7 +80,7 @@ namespace HANACANPC._03_Master
             // 
             this.btnImport.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnImport.Location = new System.Drawing.Point(342, 274);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(4);
             this.btnImport.Name = "btnImport";
             this.btnImport.Size = new System.Drawing.Size(124, 44);
             this.btnImport.TabIndex = 29;
@@ -91,7 +91,7 @@ namespace HANACANPC._03_Master
             // txtEAN
             // 
             this.txtEAN.Location = new System.Drawing.Point(360, 198);
-            this.txtEAN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEAN.Margin = new System.Windows.Forms.Padding(4);
             this.txtEAN.Name = "txtEAN";
             this.txtEAN.Size = new System.Drawing.Size(370, 24);
             this.txtEAN.TabIndex = 28;
@@ -112,7 +112,7 @@ namespace HANACANPC._03_Master
             this.btnSave.BackColor = System.Drawing.Color.Silver;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 14F);
             this.btnSave.Location = new System.Drawing.Point(237, 395);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(168, 57);
             this.btnSave.TabIndex = 26;
@@ -125,7 +125,7 @@ namespace HANACANPC._03_Master
             this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 14F);
             this.btnCancel.Location = new System.Drawing.Point(562, 395);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(168, 57);
             this.btnCancel.TabIndex = 25;
@@ -136,7 +136,7 @@ namespace HANACANPC._03_Master
             // txtDesignName
             // 
             this.txtDesignName.Location = new System.Drawing.Point(360, 145);
-            this.txtDesignName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesignName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesignName.Name = "txtDesignName";
             this.txtDesignName.Size = new System.Drawing.Size(370, 24);
             this.txtDesignName.TabIndex = 24;
@@ -156,7 +156,7 @@ namespace HANACANPC._03_Master
             // 
             this.txtDesignCode.Enabled = false;
             this.txtDesignCode.Location = new System.Drawing.Point(360, 94);
-            this.txtDesignCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesignCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesignCode.Name = "txtDesignCode";
             this.txtDesignCode.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtDesignCode.Properties.Appearance.Options.UseBackColor = true;
@@ -201,7 +201,7 @@ namespace HANACANPC._03_Master
             this.ImgLink.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.ImgLink.Appearance.Options.UseFont = true;
             this.ImgLink.Location = new System.Drawing.Point(366, 247);
-            this.ImgLink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ImgLink.Margin = new System.Windows.Forms.Padding(4);
             this.ImgLink.Name = "ImgLink";
             this.ImgLink.Size = new System.Drawing.Size(38, 14);
             this.ImgLink.TabIndex = 32;
@@ -243,7 +243,7 @@ namespace HANACANPC._03_Master
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDesignMasterUPDATE";
             this.Text = "Design Update";
             this.Load += new System.EventHandler(this.frmDesignMasterUPDATE_Load);

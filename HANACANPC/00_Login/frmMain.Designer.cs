@@ -298,7 +298,7 @@ namespace HANACANPC._00_Login
             // 
             // barBtnPrint
             // 
-            this.barBtnPrint.Caption = "Print QR ";
+            this.barBtnPrint.Caption = "In QR\r\nPrint QR";
             this.barBtnPrint.Id = 6;
             this.barBtnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnPrint.ImageOptions.Image")));
             this.barBtnPrint.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnPrint.ImageOptions.LargeImage")));
