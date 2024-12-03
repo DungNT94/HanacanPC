@@ -81,11 +81,11 @@ namespace HANACANPC._01_LogData
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(12, 12);
+            this.labelControl1.Location = new System.Drawing.Point(12, 11);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(523, 29);
+            this.labelControl1.Size = new System.Drawing.Size(486, 27);
             this.labelControl1.TabIndex = 0;
             this.labelControl1.Text = "Tiến độ công việc | Checking work progress";
             // 
@@ -557,7 +557,7 @@ namespace HANACANPC._01_LogData
             this.btnRefresh.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnRefresh.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnRefresh.Image = global::HANACANPC.ResourceImages._52352_refresh_icon;
-            this.btnRefresh.Location = new System.Drawing.Point(554, 10);
+            this.btnRefresh.Location = new System.Drawing.Point(542, 9);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(37, 34);
@@ -568,8 +568,8 @@ namespace HANACANPC._01_LogData
             // frmWorkProgress
             // 
             this.Appearance.Options.UseFont = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1139, 579);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.layoutControl1);

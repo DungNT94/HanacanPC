@@ -69,16 +69,21 @@ namespace HANACANPC._03_Master
         //Hàm Add ảnh
         private async void AddImage()
         {
+            string IpServer  = string.Empty; // Khởi tạo mặc định;
             if (!string.IsNullOrEmpty(lbl_ImageLink.Text))
             {
                 using (var client = new HttpClient())
                 {
+                    if (FileConfig.ReadSqlConfig())
+                    {
+                        IpServer = GlobalVariables.ServerName;
+                    }
                     //client.DefaultRequestHeaders.Add("Image-Name", imageName);
                     client.DefaultRequestHeaders.Add("Image-Name", Path.GetFileName(filePath));
 
                     using (var content = new ByteArrayContent(imageData))
                     {
-                        var response = await client.PostAsync("http://localhost:8686/Upload/UploadFromPC", content);
+                        var response = await client.PostAsync("http://" + IpServer + ":8686/Upload/UploadFromPC", content);
 
                         if (response.IsSuccessStatusCode)
                         {
@@ -172,28 +177,42 @@ namespace HANACANPC._03_Master
             }
             else
             {
-                if (string.IsNullOrEmpty(txtEAN.Text) || string.IsNullOrEmpty(lbl_ImageLink.Text))
+                
+                if (string.IsNullOrEmpty(txtEAN.Text) & string.IsNullOrEmpty(lbl_ImageLink.Text))
                 {
-                    DialogResult rs= MessageBox.Show("Chưa nhập Mã EAN hoặc Ảnh, có chắc chắn muốn thêm? ( EAN code and photo not entered enough, are you sure you want to add? ).", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    DialogResult rs = MessageBox.Show("Chưa nhập Mã EAN và Ảnh, có chắc chắn muốn thêm? ( EAN code and photo not entered enough, are you sure you want to add? ).", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (DialogResult.Yes == rs)
                     {
-                        //Check vượt quá số ký tự cho phép
-                        if (txtDesignCode.Text.Length != 5 || txtEAN.Text.Length!=13)
-                        {
-                            MessageBox.Show("Số ký tự của Design Code là 5 và EAN Code là 13 ( The number of characters for Design Code is 5 and EAN Code is 13' ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        if ((txtDesignCode.Text.Length != 5)){
+                            MessageBox.Show("Số ký tự của Design Code là 5 (The number of characters for Design Code is 5).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                             return;
                         }
                         else
                         {
                             IsertDesignMaster();
-                            
                         }
+                        
                     }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (!string.IsNullOrEmpty(txtEAN.Text) & string.IsNullOrEmpty(lbl_ImageLink.Text))
+                {
+
+                    MessageBox.Show("Vui lòng thêm ảnh ( Please import image ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (string.IsNullOrEmpty(txtEAN.Text) & !string.IsNullOrEmpty(lbl_ImageLink.Text))
+                {
+
+                    MessageBox.Show("Vui lòng thêm EAN code ( Please import EAN Code ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
                 }
                 else
                 {
-                    //Check vượt quá số ký tự cho phép
-                    if (txtDesignCode.Text.Length !=5  || txtEAN.Text.Length != 13)
+                    if ((txtDesignCode.Text.Length != 5 ||txtEAN.Text.Length!=13))
                     {
                         MessageBox.Show("Số ký tự của Design Code là 5 và EAN Code là 13 ( The number of characters for Design Code is 5 and EAN Code is 13' ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         return;
@@ -201,10 +220,8 @@ namespace HANACANPC._03_Master
                     else
                     {
                         IsertDesignMaster();
-
                     }
                 }
-                
 
             }
         }

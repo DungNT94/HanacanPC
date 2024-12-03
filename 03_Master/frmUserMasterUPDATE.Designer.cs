@@ -44,10 +44,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnSave.BackColor = System.Drawing.Color.Silver;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnSave.Location = new System.Drawing.Point(147, 296);
+            this.btnSave.Location = new System.Drawing.Point(104, 197);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(168, 57);
+            this.btnSave.Size = new System.Drawing.Size(132, 42);
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -57,10 +57,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnCancel.Location = new System.Drawing.Point(442, 296);
+            this.btnCancel.Location = new System.Drawing.Point(306, 197);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(168, 57);
+            this.btnCancel.Size = new System.Drawing.Size(133, 42);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -68,59 +68,59 @@ namespace HANACANPC._03_Master
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(299, 151);
+            this.txtUserName.Location = new System.Drawing.Point(178, 121);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(370, 24);
+            this.txtUserName.Size = new System.Drawing.Size(253, 24);
             this.txtUserName.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label3.Location = new System.Drawing.Point(18, 153);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label3.Location = new System.Drawing.Point(24, 123);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 22);
+            this.label3.Size = new System.Drawing.Size(91, 19);
             this.label3.TabIndex = 11;
             this.label3.Text = "User name:";
             // 
             // txtUserCode
             // 
             this.txtUserCode.Enabled = false;
-            this.txtUserCode.Location = new System.Drawing.Point(299, 100);
+            this.txtUserCode.Location = new System.Drawing.Point(178, 70);
             this.txtUserCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserCode.Name = "txtUserCode";
-            this.txtUserCode.Size = new System.Drawing.Size(370, 24);
+            this.txtUserCode.Size = new System.Drawing.Size(253, 24);
             this.txtUserCode.TabIndex = 10;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label2.Location = new System.Drawing.Point(24, 102);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label2.Location = new System.Drawing.Point(24, 80);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 22);
+            this.label2.Size = new System.Drawing.Size(85, 19);
             this.label2.TabIndex = 9;
             this.label2.Text = "User code:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label1.Location = new System.Drawing.Point(15, 21);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.label1.Location = new System.Drawing.Point(15, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 33);
+            this.label1.Size = new System.Drawing.Size(130, 27);
             this.label1.TabIndex = 8;
             this.label1.Text = "User master";
             // 
             // frmUserMasterUPDATE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(752, 397);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(539, 288);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtUserName);

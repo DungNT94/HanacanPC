@@ -28,7 +28,7 @@ namespace HANACANPC._01_LogData
         public void ShowCompensationWork()
         {
 
-            string query = "select TOP 20 * from LogCompensation ORDER BY WorkingTime DESC ;";
+            string query = "select * from ProgessCompensation ORDER BY WorkingTime DESC ;";
             DataTable dttb = objConnection.GetDataTable(query);
             gridControl2.DataSource = dttb;
             //gridView1.ClearSelection();
@@ -38,7 +38,7 @@ namespace HANACANPC._01_LogData
         public void ShowResortingWork()
         {
 
-            string query = "select TOP 1 * from LogResorting ORDER BY WorkingTime DESC ;";
+            string query = "select TOP 1 * from ProgessResorting ORDER BY WorkingTime DESC ;";
             DataTable dttb = objConnection.GetDataTable(query);
             gridControl1.DataSource = dttb;
             //gridView1.ClearSelection();

@@ -38,11 +38,12 @@ namespace HANACANPC._00_Login
             // btnContinue
             // 
             this.btnContinue.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
+            this.btnContinue.Font = new System.Drawing.Font("Arial", 10F);
             this.btnContinue.ForeColor = System.Drawing.Color.White;
-            this.btnContinue.Location = new System.Drawing.Point(190, 82);
-            this.btnContinue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnContinue.Location = new System.Drawing.Point(125, 51);
+            this.btnContinue.Margin = new System.Windows.Forms.Padding(4);
             this.btnContinue.Name = "btnContinue";
-            this.btnContinue.Size = new System.Drawing.Size(99, 32);
+            this.btnContinue.Size = new System.Drawing.Size(82, 31);
             this.btnContinue.TabIndex = 0;
             this.btnContinue.Text = "Tiếp theo";
             this.btnContinue.UseVisualStyleBackColor = false;
@@ -51,19 +52,20 @@ namespace HANACANPC._00_Login
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(45, 0);
+            this.label1.Font = new System.Drawing.Font("Arial", 10F);
+            this.label1.Location = new System.Drawing.Point(13, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 18);
+            this.label1.Size = new System.Drawing.Size(111, 16);
             this.label1.TabIndex = 1;
             this.label1.Text = "Pass (Mật khẩu)";
             // 
             // txtPassSetting
             // 
-            this.txtPassSetting.Location = new System.Drawing.Point(50, 37);
-            this.txtPassSetting.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPassSetting.Location = new System.Drawing.Point(13, 21);
+            this.txtPassSetting.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassSetting.Name = "txtPassSetting";
-            this.txtPassSetting.Size = new System.Drawing.Size(240, 24);
+            this.txtPassSetting.Size = new System.Drawing.Size(194, 24);
             this.txtPassSetting.TabIndex = 2;
             this.txtPassSetting.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassSetting_KeyDown);
             // 
@@ -71,14 +73,14 @@ namespace HANACANPC._00_Login
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(352, 139);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(220, 95);
             this.Controls.Add(this.txtPassSetting);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnContinue);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmPassSetting";
             this.Load += new System.EventHandler(this.frmPassSetting_Load);
             ((System.ComponentModel.ISupportInitialize)(this.txtPassSetting.Properties)).EndInit();

@@ -55,10 +55,10 @@ namespace HANACANPC._03_Master
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
-            this.btnDelete.Location = new System.Drawing.Point(650, 274);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnDelete.Location = new System.Drawing.Point(459, 220);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(119, 44);
+            this.btnDelete.Size = new System.Drawing.Size(110, 44);
             this.btnDelete.TabIndex = 31;
             this.btnDelete.Text = "Delete Img";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -67,10 +67,10 @@ namespace HANACANPC._03_Master
             // btnCheck
             // 
             this.btnCheck.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnCheck.Location = new System.Drawing.Point(498, 274);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCheck.Location = new System.Drawing.Point(328, 220);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(4);
             this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(124, 44);
+            this.btnCheck.Size = new System.Drawing.Size(101, 44);
             this.btnCheck.TabIndex = 30;
             this.btnCheck.Text = "Check";
             this.btnCheck.UseVisualStyleBackColor = true;
@@ -79,10 +79,10 @@ namespace HANACANPC._03_Master
             // btnImport
             // 
             this.btnImport.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.btnImport.Location = new System.Drawing.Point(342, 274);
-            this.btnImport.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnImport.Location = new System.Drawing.Point(196, 220);
+            this.btnImport.Margin = new System.Windows.Forms.Padding(4);
             this.btnImport.Name = "btnImport";
-            this.btnImport.Size = new System.Drawing.Size(124, 44);
+            this.btnImport.Size = new System.Drawing.Size(103, 44);
             this.btnImport.TabIndex = 29;
             this.btnImport.Text = " Import";
             this.btnImport.UseVisualStyleBackColor = true;
@@ -90,20 +90,20 @@ namespace HANACANPC._03_Master
             // 
             // txtEAN
             // 
-            this.txtEAN.Location = new System.Drawing.Point(360, 198);
-            this.txtEAN.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtEAN.Location = new System.Drawing.Point(222, 154);
+            this.txtEAN.Margin = new System.Windows.Forms.Padding(4);
             this.txtEAN.Name = "txtEAN";
-            this.txtEAN.Size = new System.Drawing.Size(370, 24);
+            this.txtEAN.Size = new System.Drawing.Size(272, 24);
             this.txtEAN.TabIndex = 28;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label4.Location = new System.Drawing.Point(48, 195);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label4.Location = new System.Drawing.Point(42, 156);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(49, 22);
+            this.label4.Size = new System.Drawing.Size(46, 19);
             this.label4.TabIndex = 27;
             this.label4.Text = "EAN:";
             // 
@@ -111,10 +111,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnSave.BackColor = System.Drawing.Color.Silver;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnSave.Location = new System.Drawing.Point(237, 395);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSave.Location = new System.Drawing.Point(160, 315);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(168, 57);
+            this.btnSave.Size = new System.Drawing.Size(135, 57);
             this.btnSave.TabIndex = 26;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -124,10 +124,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnCancel.Location = new System.Drawing.Point(562, 395);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(415, 315);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(168, 57);
+            this.btnCancel.Size = new System.Drawing.Size(134, 57);
             this.btnCancel.TabIndex = 25;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -135,53 +135,53 @@ namespace HANACANPC._03_Master
             // 
             // txtDesignName
             // 
-            this.txtDesignName.Location = new System.Drawing.Point(360, 145);
-            this.txtDesignName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesignName.Location = new System.Drawing.Point(221, 110);
+            this.txtDesignName.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesignName.Name = "txtDesignName";
-            this.txtDesignName.Size = new System.Drawing.Size(370, 24);
+            this.txtDesignName.Size = new System.Drawing.Size(272, 24);
             this.txtDesignName.TabIndex = 24;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label3.Location = new System.Drawing.Point(48, 143);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label3.Location = new System.Drawing.Point(41, 112);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(118, 22);
+            this.label3.Size = new System.Drawing.Size(107, 19);
             this.label3.TabIndex = 23;
             this.label3.Text = "Design name:";
             // 
             // txtDesignCode
             // 
             this.txtDesignCode.Enabled = false;
-            this.txtDesignCode.Location = new System.Drawing.Point(360, 94);
-            this.txtDesignCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDesignCode.Location = new System.Drawing.Point(221, 67);
+            this.txtDesignCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesignCode.Name = "txtDesignCode";
             this.txtDesignCode.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtDesignCode.Properties.Appearance.Options.UseBackColor = true;
-            this.txtDesignCode.Size = new System.Drawing.Size(370, 24);
+            this.txtDesignCode.Size = new System.Drawing.Size(272, 24);
             this.txtDesignCode.TabIndex = 22;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label2.Location = new System.Drawing.Point(48, 90);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label2.Location = new System.Drawing.Point(42, 69);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(112, 22);
+            this.label2.Size = new System.Drawing.Size(101, 19);
             this.label2.TabIndex = 21;
             this.label2.Text = "Design code:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label1.Location = new System.Drawing.Point(15, 18);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F);
+            this.label1.Location = new System.Drawing.Point(15, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(426, 33);
+            this.label1.Size = new System.Drawing.Size(351, 27);
             this.label1.TabIndex = 20;
             this.label1.Text = "Design master (Chỉnh sửa thiết kế)";
             // 
@@ -190,7 +190,7 @@ namespace HANACANPC._03_Master
             this.lbl_ImageLink.AutoSize = true;
             this.lbl_ImageLink.Font = new System.Drawing.Font("Tahoma", 9F);
             this.lbl_ImageLink.ForeColor = System.Drawing.Color.Blue;
-            this.lbl_ImageLink.Location = new System.Drawing.Point(435, 247);
+            this.lbl_ImageLink.Location = new System.Drawing.Point(297, 193);
             this.lbl_ImageLink.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbl_ImageLink.Name = "lbl_ImageLink";
             this.lbl_ImageLink.Size = new System.Drawing.Size(0, 14);
@@ -200,8 +200,8 @@ namespace HANACANPC._03_Master
             // 
             this.ImgLink.Appearance.Font = new System.Drawing.Font("Tahoma", 9F);
             this.ImgLink.Appearance.Options.UseFont = true;
-            this.ImgLink.Location = new System.Drawing.Point(366, 247);
-            this.ImgLink.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ImgLink.Location = new System.Drawing.Point(228, 193);
+            this.ImgLink.Margin = new System.Windows.Forms.Padding(4);
             this.ImgLink.Name = "ImgLink";
             this.ImgLink.Size = new System.Drawing.Size(38, 14);
             this.ImgLink.TabIndex = 32;
@@ -214,19 +214,19 @@ namespace HANACANPC._03_Master
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label5.Location = new System.Drawing.Point(48, 282);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 12F);
+            this.label5.Location = new System.Drawing.Point(42, 232);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 22);
+            this.label5.Size = new System.Drawing.Size(86, 19);
             this.label5.TabIndex = 34;
             this.label5.Text = "Image file:";
             // 
             // frmDesignMasterUPDATE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(900, 501);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(692, 393);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lbl_ImageLink);
             this.Controls.Add(this.ImgLink);
@@ -243,7 +243,7 @@ namespace HANACANPC._03_Master
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmDesignMasterUPDATE";
             this.Text = "Design Update";
             this.Load += new System.EventHandler(this.frmDesignMasterUPDATE_Load);

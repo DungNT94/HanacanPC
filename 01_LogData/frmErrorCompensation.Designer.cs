@@ -54,11 +54,11 @@ namespace HANACANPC._01_LogData
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Font = new System.Drawing.Font("Arial", 12F);
-            this.gridControl2.Location = new System.Drawing.Point(35, 13);
+            this.gridControl2.Location = new System.Drawing.Point(30, 13);
             this.gridControl2.MainView = this.gridViewErrorCompensation;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1858, 677);
+            this.gridControl2.Size = new System.Drawing.Size(1123, 497);
             this.gridControl2.TabIndex = 24;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewErrorCompensation});
@@ -83,14 +83,14 @@ namespace HANACANPC._01_LogData
             this.gridViewErrorCompensation.OptionsBehavior.Editable = false;
             this.gridViewErrorCompensation.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.gridViewErrorCompensation.OptionsView.ShowGroupPanel = false;
-            this.gridViewErrorCompensation.RowHeight = 32;
+            this.gridViewErrorCompensation.RowHeight = 28;
             this.gridViewErrorCompensation.CustomDrawRowIndicator += new DevExpress.XtraGrid.Views.Grid.RowIndicatorCustomDrawEventHandler(this.gridViewErrorCompensation_CustomDrawRowIndicator);
             // 
             // gridColumn1
             // 
-            this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn1.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn1.AppearanceCell.Options.UseFont = true;
-            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn1.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn1.AppearanceHeader.Options.UseFont = true;
             this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -106,9 +106,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn10
             // 
-            this.gridColumn10.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn10.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn10.AppearanceCell.Options.UseFont = true;
-            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn10.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn10.AppearanceHeader.Options.UseFont = true;
             this.gridColumn10.Caption = "TicketQR";
             this.gridColumn10.FieldName = "TicketQR";
@@ -121,9 +121,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn2
             // 
-            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn2.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn2.AppearanceCell.Options.UseFont = true;
-            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn2.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn2.AppearanceHeader.Options.UseFont = true;
             this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -137,9 +137,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn3
             // 
-            this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn3.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn3.AppearanceCell.Options.UseFont = true;
-            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn3.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn3.AppearanceHeader.Options.UseFont = true;
             this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -153,9 +153,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn4
             // 
-            this.gridColumn4.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn4.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn4.AppearanceCell.Options.UseFont = true;
-            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn4.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn4.AppearanceHeader.Options.UseFont = true;
             this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -169,9 +169,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn5
             // 
-            this.gridColumn5.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn5.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn5.AppearanceCell.Options.UseFont = true;
-            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn5.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn5.AppearanceHeader.Options.UseFont = true;
             this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -185,9 +185,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn6
             // 
-            this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn6.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn6.AppearanceCell.Options.UseFont = true;
-            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn6.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn6.AppearanceHeader.Options.UseFont = true;
             this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -201,9 +201,9 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn7
             // 
-            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn7.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn7.AppearanceCell.Options.UseFont = true;
-            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn7.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn7.AppearanceHeader.Options.UseFont = true;
             this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -217,11 +217,11 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn8
             // 
-            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn8.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn8.AppearanceCell.Options.UseFont = true;
             this.gridColumn8.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn8.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn8.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn8.AppearanceHeader.Options.UseFont = true;
             this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -235,11 +235,11 @@ namespace HANACANPC._01_LogData
             // 
             // gridColumn9
             // 
-            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn9.AppearanceCell.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn9.AppearanceCell.Options.UseFont = true;
             this.gridColumn9.AppearanceCell.Options.UseTextOptions = true;
             this.gridColumn9.AppearanceCell.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.gridColumn9.AppearanceHeader.Font = new System.Drawing.Font("Arial", 10F);
             this.gridColumn9.AppearanceHeader.Options.UseFont = true;
             this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
             this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
@@ -257,10 +257,10 @@ namespace HANACANPC._01_LogData
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(1711, 712);
+            this.btnCancel.Location = new System.Drawing.Point(1003, 521);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(168, 57);
+            this.btnCancel.Size = new System.Drawing.Size(135, 51);
             this.btnCancel.TabIndex = 26;
             this.btnCancel.Text = "CLOSE";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -272,10 +272,10 @@ namespace HANACANPC._01_LogData
             this.btnExportCSVError.BackColor = System.Drawing.Color.Green;
             this.btnExportCSVError.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnExportCSVError.ForeColor = System.Drawing.Color.White;
-            this.btnExportCSVError.Location = new System.Drawing.Point(1439, 712);
+            this.btnExportCSVError.Location = new System.Drawing.Point(817, 521);
             this.btnExportCSVError.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportCSVError.Name = "btnExportCSVError";
-            this.btnExportCSVError.Size = new System.Drawing.Size(204, 57);
+            this.btnExportCSVError.Size = new System.Drawing.Size(148, 51);
             this.btnExportCSVError.TabIndex = 41;
             this.btnExportCSVError.Text = "CSV Export Error";
             this.btnExportCSVError.UseVisualStyleBackColor = false;
@@ -283,12 +283,14 @@ namespace HANACANPC._01_LogData
             // 
             // frmErrorCompensation
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1938, 787);
+            this.Appearance.Options.UseFont = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1183, 582);
             this.Controls.Add(this.btnExportCSVError);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.gridControl2);
+            this.Font = new System.Drawing.Font("Arial", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmErrorCompensation";
             this.Text = "Danh sách lỗi Compensation(Error Compensation)";

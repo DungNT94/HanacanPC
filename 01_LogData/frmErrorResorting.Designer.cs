@@ -45,13 +45,13 @@ namespace HANACANPC._01_LogData
             this.gridControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Font = new System.Drawing.Font("Arial", 12F);
-            this.gridControl2.Location = new System.Drawing.Point(39, 17);
+            this.gridControl2.Location = new System.Drawing.Point(28, 11);
             this.gridControl2.MainView = this.gridViewErrorResorting;
-            this.gridControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl2.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1836, 683);
+            this.gridControl2.Size = new System.Drawing.Size(1123, 506);
             this.gridControl2.TabIndex = 25;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewErrorResorting});
@@ -125,10 +125,10 @@ namespace HANACANPC._01_LogData
             this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(75)))), ((int)(((byte)(109)))));
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnCancel.ForeColor = System.Drawing.Color.White;
-            this.btnCancel.Location = new System.Drawing.Point(1689, 714);
-            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancel.Location = new System.Drawing.Point(1003, 538);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(168, 57);
+            this.btnCancel.Size = new System.Drawing.Size(130, 51);
             this.btnCancel.TabIndex = 27;
             this.btnCancel.Text = "CLOSE";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -140,10 +140,10 @@ namespace HANACANPC._01_LogData
             this.btnExportCSVError.BackColor = System.Drawing.Color.Green;
             this.btnExportCSVError.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnExportCSVError.ForeColor = System.Drawing.Color.White;
-            this.btnExportCSVError.Location = new System.Drawing.Point(1420, 716);
-            this.btnExportCSVError.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExportCSVError.Location = new System.Drawing.Point(833, 538);
+            this.btnExportCSVError.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportCSVError.Name = "btnExportCSVError";
-            this.btnExportCSVError.Size = new System.Drawing.Size(204, 55);
+            this.btnExportCSVError.Size = new System.Drawing.Size(142, 51);
             this.btnExportCSVError.TabIndex = 41;
             this.btnExportCSVError.Text = "CSV Export Error";
             this.btnExportCSVError.UseVisualStyleBackColor = false;
@@ -151,13 +151,13 @@ namespace HANACANPC._01_LogData
             // 
             // frmErrorResorting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1917, 787);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1183, 598);
             this.Controls.Add(this.btnExportCSVError);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.gridControl2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmErrorResorting";
             this.Text = "Danh sách lỗi Resorting (Error Resorting)";
             this.Load += new System.EventHandler(this.frmErrorResorting_Load);

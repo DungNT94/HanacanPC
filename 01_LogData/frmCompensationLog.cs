@@ -163,8 +163,8 @@ namespace HANACANPC._01_LogData
                 }
 
                 //Thiết lập bộ lọc tìm kiếm WorkingTime
-                string TimeStart = txtDateWorkTimeStart.Value.ToString("yyyy-MM-dd HH:mm");
-                string TimeEnd = txtDateWorkTimeEnd.Value.ToString("yyyy-MM-dd HH:mm");
+                string TimeStart = txtDateWorkTimeStart.Value.ToString("yyyyMMdd HH:mm");
+                string TimeEnd = txtDateWorkTimeEnd.Value.ToString("yyyyMMdd HH:mm");
                 query += " and WorkingTime BETWEEN '" + TimeStart + "' and '"+ TimeEnd + "'";
 
                 //Sắp xếp bảng theo UpdateTime

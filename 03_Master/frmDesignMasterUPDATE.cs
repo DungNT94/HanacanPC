@@ -147,16 +147,21 @@ namespace HANACANPC._03_Master
         //Hàm Add image
         private async void ImportImage()
         {
+            string IpServer = string.Empty; // Khởi tạo mặc định;
             if (!string.IsNullOrEmpty(lbl_ImageLink.Text)&&!string.IsNullOrEmpty(filePath))
             {
                 using (var client = new HttpClient())
                 {
+                    if (FileConfig.ReadSqlConfig())
+                    {
+                        IpServer = GlobalVariables.ServerName;
+                    }
                     //client.DefaultRequestHeaders.Add("Image-Name", imageName);
                     client.DefaultRequestHeaders.Add("Image-Name", Path.GetFileName(filePath));
 
                     using (var content = new ByteArrayContent(imageData))
                     {
-                        var response = await client.PostAsync("http://localhost:8686/Upload/UploadFromPC", content);
+                        var response = await client.PostAsync("http://" + IpServer + ":8686/Upload/UploadFromPC", content);
 
                         if (response.IsSuccessStatusCode)
                         {
@@ -195,14 +200,62 @@ namespace HANACANPC._03_Master
             }
             else
             {
-                if (txtEAN.Text.Length != 13)
+                //if (txtEAN.Text.Length != 13 & !string.IsNullOrEmpty(txtEAN.Text) & txtEAN.Text.Length != 0)
+                //{
+                //    MessageBox.Show("Mã EAN code có 13 ký tự ( EAN Code has 13 characters ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //    return;
+                //}
+                //else
+                //{
+                //    UdateDesignMaster();
+                //}
+
+
+                if (string.IsNullOrEmpty(txtEAN.Text) & string.IsNullOrEmpty(lbl_ImageLink.Text))
                 {
-                    MessageBox.Show("Mã EAN code có 13 ký tự ( EAN Code has 13 characters ).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    DialogResult rs = MessageBox.Show("Chưa nhập Mã EAN và Ảnh, có chắc chắn muốn thêm? ( EAN code and photo not entered enough, are you sure you want to add? ).", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (DialogResult.Yes == rs)
+                    {
+                        //if ((txtDesignCode.Text.Length != 5))
+                        //{
+                        //    MessageBox.Show("Số ký tự của Design Code là 5 (The number of characters for Design Code is 5).", "Alert", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        //    return;
+                        //}
+                        //else
+                        //{
+                        //    UdateDesignMaster();
+                        //}
+                        UdateDesignMaster();
+
+                    }
+                    else
+                    {
+                        return;
+                    }
+                }
+                else if (!string.IsNullOrEmpty(txtEAN.Text) & string.IsNullOrEmpty(lbl_ImageLink.Text))
+                {
+
+                    MessageBox.Show("Vui lòng thêm ảnh ( Please import image ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return;
+                }
+                else if (string.IsNullOrEmpty(txtEAN.Text) & !string.IsNullOrEmpty(lbl_ImageLink.Text))
+                {
+
+                    MessageBox.Show("Vui lòng thêm EAN code ( Please import EAN Code ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     return;
                 }
                 else
                 {
-                    UdateDesignMaster();
+                    if (txtEAN.Text.Length != 13)
+                    {
+                        MessageBox.Show("Số ký tự của EAN Code là 13 ( The number of characters for EAN Code is 13' ).", "Notification", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        return;
+                    }
+                    else
+                    {
+                        UdateDesignMaster();
+                    }
                 }
             }
         }

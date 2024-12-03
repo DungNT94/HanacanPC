@@ -41,11 +41,16 @@ namespace HANACANPC._03_Master
             //    this.Close();
             //}
             string imageName = GloUserMaster1.ImageName;
+            string IpServer = string.Empty; // Khởi tạo mặc định;
             using (var client = new HttpClient())
             {
+                if (FileConfig.ReadSqlConfig())
+                {
+                    IpServer = GlobalVariables.ServerName;
+                }
                 //string url = $"http://10.84.30.37:8686/Image/" + imageName; //Wifi guest
                 //string url = $"http://10.84.26.06:8686/Image/" + imageName; //Wifi sato office
-                string url = $"http://localhost:8686/Image/" + imageName; //Wifi sato
+                string url = $"http://"+IpServer+":8686/Image/" + imageName; //Wifi sato
 
                 var response = await client.GetAsync(url);
                 using (WebClient webClient = new WebClient())
@@ -74,6 +79,11 @@ namespace HANACANPC._03_Master
         private void ViewImages_Load(object sender, EventArgs e)
         {
             ReviewImage();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

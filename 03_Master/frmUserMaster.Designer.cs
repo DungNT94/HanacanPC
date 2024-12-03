@@ -134,22 +134,22 @@ namespace HANACANPC._03_Master
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(438, 118);
+            this.txtUserName.Location = new System.Drawing.Point(298, 84);
             this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtUserName.Properties.Appearance.Options.UseFont = true;
-            this.txtUserName.Size = new System.Drawing.Size(303, 22);
+            this.txtUserName.Size = new System.Drawing.Size(230, 22);
             this.txtUserName.TabIndex = 1;
             // 
             // txtUserCode
             // 
-            this.txtUserCode.Location = new System.Drawing.Point(92, 118);
+            this.txtUserCode.Location = new System.Drawing.Point(32, 84);
             this.txtUserCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserCode.Name = "txtUserCode";
             this.txtUserCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtUserCode.Properties.Appearance.Options.UseFont = true;
-            this.txtUserCode.Size = new System.Drawing.Size(303, 22);
+            this.txtUserCode.Size = new System.Drawing.Size(230, 22);
             this.txtUserCode.TabIndex = 0;
             this.txtUserCode.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUserCode_KeyPress);
             // 
@@ -158,10 +158,10 @@ namespace HANACANPC._03_Master
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnDelete.Image = global::HANACANPC.ResourceImages.DeleteList_16x16;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(1179, 107);
+            this.btnDelete.Location = new System.Drawing.Point(811, 73);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(141, 50);
+            this.btnDelete.Size = new System.Drawing.Size(99, 37);
             this.btnDelete.TabIndex = 4;
             this.btnDelete.TabStop = false;
             this.btnDelete.Text = "Delete";
@@ -173,10 +173,10 @@ namespace HANACANPC._03_Master
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnUpdate.Image = global::HANACANPC.ResourceImages.EditName_16x16;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(1004, 107);
+            this.btnUpdate.Location = new System.Drawing.Point(689, 73);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(141, 50);
+            this.btnUpdate.Size = new System.Drawing.Size(99, 37);
             this.btnUpdate.TabIndex = 3;
             this.btnUpdate.TabStop = false;
             this.btnUpdate.Text = "Update";
@@ -188,10 +188,10 @@ namespace HANACANPC._03_Master
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnAdd.Image = global::HANACANPC.ResourceImages.Add_16x16;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(826, 107);
+            this.btnAdd.Location = new System.Drawing.Point(568, 73);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(141, 50);
+            this.btnAdd.Size = new System.Drawing.Size(99, 37);
             this.btnAdd.TabIndex = 2;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -200,33 +200,33 @@ namespace HANACANPC._03_Master
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label3.Location = new System.Drawing.Point(434, 87);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label3.Location = new System.Drawing.Point(300, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(200, 18);
+            this.label3.Size = new System.Drawing.Size(185, 17);
             this.label3.TabIndex = 28;
             this.label3.Text = "Tên người dùng (User name)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label2.Location = new System.Drawing.Point(87, 87);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label2.Location = new System.Drawing.Point(34, 63);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(188, 18);
+            this.label2.Size = new System.Drawing.Size(175, 17);
             this.label2.TabIndex = 27;
             this.label2.Text = "Mã người dùng (User code)";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(18, 13);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(447, 29);
+            this.label1.Size = new System.Drawing.Size(414, 27);
             this.label1.TabIndex = 26;
             this.label1.Text = "Danh mục người dùng (User Master)";
             // 
@@ -257,13 +257,13 @@ namespace HANACANPC._03_Master
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridControl1.Location = new System.Drawing.Point(58, 211);
+            this.gridControl1.Location = new System.Drawing.Point(23, 136);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
             this.gridControl1.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1});
-            this.gridControl1.Size = new System.Drawing.Size(1476, 540);
+            this.gridControl1.Size = new System.Drawing.Size(1229, 575);
             this.gridControl1.TabIndex = 4;
             this.gridControl1.TabStop = false;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -337,19 +337,19 @@ namespace HANACANPC._03_Master
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnRefresh.Image = global::HANACANPC.ResourceImages._52352_refresh_icon;
-            this.btnRefresh.Location = new System.Drawing.Point(1461, 222);
+            this.btnRefresh.Location = new System.Drawing.Point(1186, 141);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(56, 44);
+            this.btnRefresh.Size = new System.Drawing.Size(48, 36);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // frmUserMaster
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1617, 827);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1278, 736);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.gridControl1);
             this.Controls.Add(this.txtUserName);

@@ -30,14 +30,14 @@ namespace HANACANPC._03_Master
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            DevExpress.DataAccess.Sql.SelectQuery selectQuery1 = new DevExpress.DataAccess.Sql.SelectQuery();
-            DevExpress.DataAccess.Sql.Column column1 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression1 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Table table1 = new DevExpress.DataAccess.Sql.Table();
-            DevExpress.DataAccess.Sql.Column column2 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression2 = new DevExpress.DataAccess.Sql.ColumnExpression();
-            DevExpress.DataAccess.Sql.Column column3 = new DevExpress.DataAccess.Sql.Column();
-            DevExpress.DataAccess.Sql.ColumnExpression columnExpression3 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.SelectQuery selectQuery2 = new DevExpress.DataAccess.Sql.SelectQuery();
+            DevExpress.DataAccess.Sql.Column column4 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression4 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Table table2 = new DevExpress.DataAccess.Sql.Table();
+            DevExpress.DataAccess.Sql.Column column5 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression5 = new DevExpress.DataAccess.Sql.ColumnExpression();
+            DevExpress.DataAccess.Sql.Column column6 = new DevExpress.DataAccess.Sql.Column();
+            DevExpress.DataAccess.Sql.ColumnExpression columnExpression6 = new DevExpress.DataAccess.Sql.ColumnExpression();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDesignMaster));
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -71,11 +71,11 @@ namespace HANACANPC._03_Master
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridControl1.Location = new System.Drawing.Point(57, 216);
+            this.gridControl1.Location = new System.Drawing.Point(23, 131);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1618, 435);
+            this.gridControl1.Size = new System.Drawing.Size(1229, 580);
             this.gridControl1.TabIndex = 20;
             this.gridControl1.TabStop = false;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -166,24 +166,24 @@ namespace HANACANPC._03_Master
             // 
             this.sqlDataSource1.ConnectionName = "localhost_HANACANS_Connection";
             this.sqlDataSource1.Name = "sqlDataSource1";
-            columnExpression1.ColumnName = "DesignCode";
-            table1.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
-            table1.Name = "tbl_DesignMaster";
-            columnExpression1.Table = table1;
-            column1.Expression = columnExpression1;
-            columnExpression2.ColumnName = "DesignName";
-            columnExpression2.Table = table1;
-            column2.Expression = columnExpression2;
-            columnExpression3.ColumnName = "EANCode";
-            columnExpression3.Table = table1;
-            column3.Expression = columnExpression3;
-            selectQuery1.Columns.Add(column1);
-            selectQuery1.Columns.Add(column2);
-            selectQuery1.Columns.Add(column3);
-            selectQuery1.Name = "tbl_DesignMaster";
-            selectQuery1.Tables.Add(table1);
+            columnExpression4.ColumnName = "DesignCode";
+            table2.MetaSerializable = "<Meta X=\"30\" Y=\"30\" Width=\"125\" Height=\"123\" />";
+            table2.Name = "tbl_DesignMaster";
+            columnExpression4.Table = table2;
+            column4.Expression = columnExpression4;
+            columnExpression5.ColumnName = "DesignName";
+            columnExpression5.Table = table2;
+            column5.Expression = columnExpression5;
+            columnExpression6.ColumnName = "EANCode";
+            columnExpression6.Table = table2;
+            column6.Expression = columnExpression6;
+            selectQuery2.Columns.Add(column4);
+            selectQuery2.Columns.Add(column5);
+            selectQuery2.Columns.Add(column6);
+            selectQuery2.Name = "tbl_DesignMaster";
+            selectQuery2.Tables.Add(table2);
             this.sqlDataSource1.Queries.AddRange(new DevExpress.DataAccess.Sql.SqlQuery[] {
-            selectQuery1});
+            selectQuery2});
             this.sqlDataSource1.ResultSchemaSerializable = resources.GetString("sqlDataSource1.ResultSchemaSerializable");
             // 
             // btnDelete
@@ -191,10 +191,10 @@ namespace HANACANPC._03_Master
             this.btnDelete.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnDelete.Image = global::HANACANPC.ResourceImages.DeleteList_16x16;
             this.btnDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDelete.Location = new System.Drawing.Point(1440, 114);
+            this.btnDelete.Location = new System.Drawing.Point(989, 78);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(141, 50);
+            this.btnDelete.Size = new System.Drawing.Size(99, 37);
             this.btnDelete.TabIndex = 19;
             this.btnDelete.TabStop = false;
             this.btnDelete.Text = "Delete";
@@ -206,10 +206,10 @@ namespace HANACANPC._03_Master
             this.btnUpdate.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnUpdate.Image = global::HANACANPC.ResourceImages.EditName_16x16;
             this.btnUpdate.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnUpdate.Location = new System.Drawing.Point(1263, 114);
+            this.btnUpdate.Location = new System.Drawing.Point(884, 78);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(141, 50);
+            this.btnUpdate.Size = new System.Drawing.Size(99, 37);
             this.btnUpdate.TabIndex = 18;
             this.btnUpdate.TabStop = false;
             this.btnUpdate.Text = "Update";
@@ -221,10 +221,10 @@ namespace HANACANPC._03_Master
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnAdd.Image = global::HANACANPC.ResourceImages.Add_16x16;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdd.Location = new System.Drawing.Point(1090, 112);
+            this.btnAdd.Location = new System.Drawing.Point(779, 78);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(141, 50);
+            this.btnAdd.Size = new System.Drawing.Size(99, 37);
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -233,79 +233,79 @@ namespace HANACANPC._03_Master
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label3.Location = new System.Drawing.Point(408, 96);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label3.Location = new System.Drawing.Point(281, 66);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(189, 18);
+            this.label3.Size = new System.Drawing.Size(173, 17);
             this.label3.TabIndex = 15;
             this.label3.Text = "Tên thiết kế (Design name)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label2.Location = new System.Drawing.Point(82, 96);
+            this.label2.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label2.Location = new System.Drawing.Point(41, 65);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(177, 18);
+            this.label2.Size = new System.Drawing.Size(163, 17);
             this.label2.TabIndex = 13;
             this.label2.Text = "Mã thiết kế (Design code)";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
             this.label1.Location = new System.Drawing.Point(18, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(419, 29);
+            this.label1.Size = new System.Drawing.Size(389, 27);
             this.label1.TabIndex = 11;
             this.label1.Text = "Danh mục Design (Design Master)";
             // 
             // txtDesignCode
             // 
             this.txtDesignCode.Enabled = false;
-            this.txtDesignCode.Location = new System.Drawing.Point(87, 125);
+            this.txtDesignCode.Location = new System.Drawing.Point(38, 87);
             this.txtDesignCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDesignCode.Name = "txtDesignCode";
             this.txtDesignCode.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtDesignCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtDesignCode.Properties.Appearance.Options.UseBackColor = true;
             this.txtDesignCode.Properties.Appearance.Options.UseFont = true;
-            this.txtDesignCode.Size = new System.Drawing.Size(258, 22);
+            this.txtDesignCode.Size = new System.Drawing.Size(213, 22);
             this.txtDesignCode.TabIndex = 1;
             // 
             // txtDesignName
             // 
             this.txtDesignName.Enabled = false;
-            this.txtDesignName.Location = new System.Drawing.Point(412, 125);
+            this.txtDesignName.Location = new System.Drawing.Point(278, 87);
             this.txtDesignName.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtDesignName.Name = "txtDesignName";
             this.txtDesignName.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtDesignName.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtDesignName.Properties.Appearance.Options.UseBackColor = true;
             this.txtDesignName.Properties.Appearance.Options.UseFont = true;
-            this.txtDesignName.Size = new System.Drawing.Size(258, 22);
+            this.txtDesignName.Size = new System.Drawing.Size(213, 22);
             this.txtDesignName.TabIndex = 2;
             // 
             // txtEANCode
             // 
             this.txtEANCode.Enabled = false;
-            this.txtEANCode.Location = new System.Drawing.Point(746, 125);
+            this.txtEANCode.Location = new System.Drawing.Point(515, 87);
             this.txtEANCode.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtEANCode.Name = "txtEANCode";
             this.txtEANCode.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.txtEANCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtEANCode.Properties.Appearance.Options.UseBackColor = true;
             this.txtEANCode.Properties.Appearance.Options.UseFont = true;
-            this.txtEANCode.Size = new System.Drawing.Size(258, 22);
+            this.txtEANCode.Size = new System.Drawing.Size(213, 22);
             this.txtEANCode.TabIndex = 3;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label4.Location = new System.Drawing.Point(741, 96);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label4.Location = new System.Drawing.Point(518, 66);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 18);
+            this.label4.Size = new System.Drawing.Size(127, 17);
             this.label4.TabIndex = 24;
             this.label4.Text = "Mã EAN (EAN code)";
             // 
@@ -314,19 +314,19 @@ namespace HANACANPC._03_Master
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnRefresh.Image = global::HANACANPC.ResourceImages._52352_refresh_icon;
-            this.btnRefresh.Location = new System.Drawing.Point(1600, 228);
+            this.btnRefresh.Location = new System.Drawing.Point(1181, 136);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(56, 44);
+            this.btnRefresh.Size = new System.Drawing.Size(49, 37);
             this.btnRefresh.TabIndex = 27;
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // frmDesignMaster
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1772, 721);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1278, 736);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.txtEANCode);
             this.Controls.Add(this.label4);

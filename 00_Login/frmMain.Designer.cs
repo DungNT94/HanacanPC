@@ -104,6 +104,7 @@ namespace HANACANPC._00_Login
             this.ribbon.ApplicationButtonDropDownControl = this.backstageViewControl1;
             this.ribbon.ColorScheme = DevExpress.XtraBars.Ribbon.RibbonControlColorScheme.DarkBlue;
             this.ribbon.ExpandCollapseItem.Id = 0;
+            this.ribbon.Font = new System.Drawing.Font("Arial", 10F);
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
             this.ribbon.SearchEditItem,
@@ -150,7 +151,7 @@ namespace HANACANPC._00_Login
             this.ribbon.QuickToolbarItemLinks.Add(this.skinRibbonGalleryBarItem1);
             this.ribbon.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemButtonEdit1});
-            this.ribbon.Size = new System.Drawing.Size(1938, 174);
+            this.ribbon.Size = new System.Drawing.Size(1278, 174);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             // 
             // backstageViewControl1
@@ -257,10 +258,14 @@ namespace HANACANPC._00_Login
             // 
             // barBtnWorkProgress
             // 
-            this.barBtnWorkProgress.Caption = "Xem tiến độ công việc\r\nWork progress";
+            this.barBtnWorkProgress.Caption = "Tổng quan tiến độ công việc\r\nWork progress";
             this.barBtnWorkProgress.Id = 1;
             this.barBtnWorkProgress.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnWorkProgress.ImageOptions.SvgImage")));
-            this.barBtnWorkProgress.LargeWidth = 130;
+            this.barBtnWorkProgress.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnWorkProgress.ItemAppearance.Normal.Options.UseFont = true;
+            this.barBtnWorkProgress.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnWorkProgress.ItemInMenuAppearance.Normal.Options.UseFont = true;
+            this.barBtnWorkProgress.LargeWidth = 190;
             this.barBtnWorkProgress.Name = "barBtnWorkProgress";
             this.barBtnWorkProgress.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnWorkProgress_ItemClick);
             // 
@@ -272,11 +277,13 @@ namespace HANACANPC._00_Login
             // 
             // barBtnCompensationLog
             // 
-            this.barBtnCompensationLog.Caption = "Danh sách compensation\r\nCompensation LogData";
+            this.barBtnCompensationLog.Caption = "Danh sách lịch sử bù hàng\r\nCompensation LogData";
             this.barBtnCompensationLog.Id = 3;
             this.barBtnCompensationLog.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnCompensationLog.ImageOptions.Image")));
             this.barBtnCompensationLog.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnCompensationLog.ImageOptions.LargeImage")));
-            this.barBtnCompensationLog.LargeWidth = 130;
+            this.barBtnCompensationLog.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnCompensationLog.ItemAppearance.Normal.Options.UseFont = true;
+            this.barBtnCompensationLog.LargeWidth = 190;
             this.barBtnCompensationLog.Name = "barBtnCompensationLog";
             this.barBtnCompensationLog.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnCompensationLog_ItemClick);
             // 
@@ -288,20 +295,24 @@ namespace HANACANPC._00_Login
             // 
             // barBtnResortingLog
             // 
-            this.barBtnResortingLog.Caption = "Danh sách resorting\r\nResorting LogData";
+            this.barBtnResortingLog.Caption = "DS lịch sử kiểm tra mã ticket QR\r\nResorting LogData";
             this.barBtnResortingLog.Id = 5;
             this.barBtnResortingLog.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnResortingLog.ImageOptions.Image")));
             this.barBtnResortingLog.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnResortingLog.ImageOptions.LargeImage")));
-            this.barBtnResortingLog.LargeWidth = 130;
+            this.barBtnResortingLog.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnResortingLog.ItemAppearance.Normal.Options.UseFont = true;
+            this.barBtnResortingLog.LargeWidth = 210;
             this.barBtnResortingLog.Name = "barBtnResortingLog";
             this.barBtnResortingLog.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnResortingLog_ItemClick);
             // 
             // barBtnPrint
             // 
-            this.barBtnPrint.Caption = "Print QR ";
+            this.barBtnPrint.Caption = "In QR\r\nPrint QR";
             this.barBtnPrint.Id = 6;
             this.barBtnPrint.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnPrint.ImageOptions.Image")));
             this.barBtnPrint.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnPrint.ImageOptions.LargeImage")));
+            this.barBtnPrint.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnPrint.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnPrint.LargeWidth = 130;
             this.barBtnPrint.Name = "barBtnPrint";
             this.barBtnPrint.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnPrint_ItemClick);
@@ -330,6 +341,8 @@ namespace HANACANPC._00_Login
             this.barBtnMasterMaintenance.Id = 10;
             this.barBtnMasterMaintenance.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnMasterMaintenance.ImageOptions.Image")));
             this.barBtnMasterMaintenance.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnMasterMaintenance.ImageOptions.LargeImage")));
+            this.barBtnMasterMaintenance.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnMasterMaintenance.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnMasterMaintenance.LargeWidth = 130;
             this.barBtnMasterMaintenance.Name = "barBtnMasterMaintenance";
             this.barBtnMasterMaintenance.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnMasterMaintenance_ItemClick);
@@ -340,6 +353,8 @@ namespace HANACANPC._00_Login
             this.barBtnSystemSetting.Id = 11;
             this.barBtnSystemSetting.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barBtnSystemSetting.ImageOptions.Image")));
             this.barBtnSystemSetting.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barBtnSystemSetting.ImageOptions.LargeImage")));
+            this.barBtnSystemSetting.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnSystemSetting.ItemAppearance.Normal.Options.UseFont = true;
             this.barBtnSystemSetting.LargeWidth = 130;
             this.barBtnSystemSetting.Name = "barBtnSystemSetting";
             this.barBtnSystemSetting.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barBtnSystemSetting_ItemClick);
@@ -505,6 +520,8 @@ namespace HANACANPC._00_Login
             // 
             // ribbonPage1
             // 
+            this.ribbonPage1.Appearance.Font = new System.Drawing.Font("Arial", 11F);
+            this.ribbonPage1.Appearance.Options.UseFont = true;
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
             this.ribbonPageGroup1,
             this.ribbonPageGroup2,
@@ -557,11 +574,11 @@ namespace HANACANPC._00_Login
             // ribbonStatusBar
             // 
             this.ribbonStatusBar.AutoHeight = true;
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1036);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 741);
             this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1938, 26);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1278, 26);
             // 
             // ribbonPage3
             // 
@@ -589,9 +606,9 @@ namespace HANACANPC._00_Login
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1938, 1062);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1278, 767);
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);

@@ -71,12 +71,12 @@ namespace HANACANPC._01_LogData
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(18, 17);
+            this.labelControl1.Location = new System.Drawing.Point(18, 12);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(602, 29);
+            this.labelControl1.Size = new System.Drawing.Size(530, 25);
             this.labelControl1.TabIndex = 4;
             this.labelControl1.Text = "Danh sách compensation (Compensation log data)";
             // 
@@ -86,12 +86,12 @@ namespace HANACANPC._01_LogData
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridControl2.Location = new System.Drawing.Point(48, 275);
+            this.gridControl2.Font = new System.Drawing.Font("Arial", 11F);
+            this.gridControl2.Location = new System.Drawing.Point(31, 225);
             this.gridControl2.MainView = this.gridViewCompensation;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(1768, 558);
+            this.gridControl2.Size = new System.Drawing.Size(1213, 485);
             this.gridControl2.TabIndex = 8;
             this.gridControl2.TabStop = false;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
@@ -297,41 +297,41 @@ namespace HANACANPC._01_LogData
             this.panel2.Controls.Add(this.txtErrorEnd);
             this.panel2.Controls.Add(this.txtErrorStart);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(642, 107);
+            this.panel2.Location = new System.Drawing.Point(445, 85);
             this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(402, 44);
+            this.panel2.Size = new System.Drawing.Size(369, 44);
             this.panel2.TabIndex = 2;
             // 
             // txtErrorEnd
             // 
-            this.txtErrorEnd.Location = new System.Drawing.Point(226, 6);
+            this.txtErrorEnd.Location = new System.Drawing.Point(208, 9);
             this.txtErrorEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtErrorEnd.Name = "txtErrorEnd";
             this.txtErrorEnd.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtErrorEnd.Properties.Appearance.Options.UseFont = true;
-            this.txtErrorEnd.Size = new System.Drawing.Size(158, 22);
+            this.txtErrorEnd.Size = new System.Drawing.Size(147, 22);
             this.txtErrorEnd.TabIndex = 4;
             this.txtErrorEnd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtErrorEnd_KeyPress);
             // 
             // txtErrorStart
             // 
-            this.txtErrorStart.Location = new System.Drawing.Point(10, 6);
+            this.txtErrorStart.Location = new System.Drawing.Point(10, 9);
             this.txtErrorStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtErrorStart.Name = "txtErrorStart";
             this.txtErrorStart.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtErrorStart.Properties.Appearance.Options.UseFont = true;
-            this.txtErrorStart.Size = new System.Drawing.Size(158, 22);
+            this.txtErrorStart.Size = new System.Drawing.Size(147, 22);
             this.txtErrorStart.TabIndex = 3;
             this.txtErrorStart.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtErrorStart_KeyPress);
             // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label2.Location = new System.Drawing.Point(173, 7);
+            this.label2.Location = new System.Drawing.Point(165, 7);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 26);
+            this.label2.Size = new System.Drawing.Size(39, 26);
             this.label2.TabIndex = 1;
             this.label2.Text = "to";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -339,22 +339,22 @@ namespace HANACANPC._01_LogData
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label3.Location = new System.Drawing.Point(66, 75);
+            this.label3.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label3.Location = new System.Drawing.Point(36, 63);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(209, 18);
+            this.label3.Size = new System.Drawing.Size(194, 17);
             this.label3.TabIndex = 10;
             this.label3.Text = "Thời gian làm việc (Work time)";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label4.Location = new System.Drawing.Point(650, 75);
+            this.label4.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label4.Location = new System.Drawing.Point(449, 63);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(172, 18);
+            this.label4.Size = new System.Drawing.Size(166, 17);
             this.label4.TabIndex = 11;
             this.label4.Text = "Số lượng lỗi (Error Count)";
             // 
@@ -365,16 +365,16 @@ namespace HANACANPC._01_LogData
             this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.txtDateWorkTimeEnd);
             this.panel3.Controls.Add(this.txtDateWorkTimeStart);
-            this.panel3.Location = new System.Drawing.Point(60, 107);
+            this.panel3.Location = new System.Drawing.Point(33, 85);
             this.panel3.Margin = new System.Windows.Forms.Padding(4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(521, 44);
+            this.panel3.Size = new System.Drawing.Size(369, 44);
             this.panel3.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.label6.Location = new System.Drawing.Point(243, 10);
+            this.label6.Location = new System.Drawing.Point(166, 9);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 26);
@@ -386,77 +386,78 @@ namespace HANACANPC._01_LogData
             // 
             this.txtDateWorkTimeEnd.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtDateWorkTimeEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtDateWorkTimeEnd.Location = new System.Drawing.Point(286, 5);
+            this.txtDateWorkTimeEnd.Location = new System.Drawing.Point(208, 9);
             this.txtDateWorkTimeEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtDateWorkTimeEnd.Name = "txtDateWorkTimeEnd";
-            this.txtDateWorkTimeEnd.Size = new System.Drawing.Size(222, 24);
+            this.txtDateWorkTimeEnd.Size = new System.Drawing.Size(147, 24);
             this.txtDateWorkTimeEnd.TabIndex = 1;
+            this.txtDateWorkTimeEnd.Value = new System.DateTime(2024, 12, 3, 8, 12, 0, 0);
             this.txtDateWorkTimeEnd.ValueChanged += new System.EventHandler(this.txtDateWorkTimeEnd_ValueChanged);
             // 
             // txtDateWorkTimeStart
             // 
             this.txtDateWorkTimeStart.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtDateWorkTimeStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.txtDateWorkTimeStart.Location = new System.Drawing.Point(10, 5);
+            this.txtDateWorkTimeStart.Location = new System.Drawing.Point(9, 9);
             this.txtDateWorkTimeStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtDateWorkTimeStart.Name = "txtDateWorkTimeStart";
-            this.txtDateWorkTimeStart.Size = new System.Drawing.Size(222, 24);
+            this.txtDateWorkTimeStart.Size = new System.Drawing.Size(147, 24);
             this.txtDateWorkTimeStart.TabIndex = 0;
             this.txtDateWorkTimeStart.ValueChanged += new System.EventHandler(this.txtDateWorkTimeStart_ValueChanged);
             // 
             // txtLocation
             // 
-            this.txtLocation.Location = new System.Drawing.Point(60, 210);
+            this.txtLocation.Location = new System.Drawing.Point(33, 173);
             this.txtLocation.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocation.Name = "txtLocation";
             this.txtLocation.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtLocation.Properties.Appearance.Options.UseFont = true;
-            this.txtLocation.Size = new System.Drawing.Size(524, 22);
+            this.txtLocation.Size = new System.Drawing.Size(369, 22);
             this.txtLocation.TabIndex = 5;
             // 
             // txtDesignCode
             // 
-            this.txtDesignCode.Location = new System.Drawing.Point(642, 210);
+            this.txtDesignCode.Location = new System.Drawing.Point(445, 173);
             this.txtDesignCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtDesignCode.Name = "txtDesignCode";
             this.txtDesignCode.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtDesignCode.Properties.Appearance.Options.UseFont = true;
-            this.txtDesignCode.Size = new System.Drawing.Size(404, 22);
+            this.txtDesignCode.Size = new System.Drawing.Size(369, 22);
             this.txtDesignCode.TabIndex = 6;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label1.Location = new System.Drawing.Point(650, 180);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label1.Location = new System.Drawing.Point(449, 151);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(177, 18);
+            this.label1.Size = new System.Drawing.Size(163, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Mã thiết kế (Design code)";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 11F);
-            this.label5.Location = new System.Drawing.Point(66, 180);
+            this.label5.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.label5.Location = new System.Drawing.Point(36, 151);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 18);
+            this.label5.Size = new System.Drawing.Size(100, 17);
             this.label5.TabIndex = 3;
             this.label5.Text = "Vị trí (Location)";
             // 
             // btnSearch
             // 
             this.btnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnSearch.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnSearch.ForeColor = System.Drawing.Color.White;
             this.btnSearch.Image = global::HANACANPC.ResourceImages.search2;
             this.btnSearch.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSearch.Location = new System.Drawing.Point(1090, 183);
+            this.btnSearch.Location = new System.Drawing.Point(857, 152);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(182, 59);
+            this.btnSearch.Size = new System.Drawing.Size(115, 44);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.Text = "Search";
             this.btnSearch.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -467,14 +468,14 @@ namespace HANACANPC._01_LogData
             // 
             this.btnExportCSVMain.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportCSVMain.BackColor = System.Drawing.Color.Green;
-            this.btnExportCSVMain.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExportCSVMain.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnExportCSVMain.ForeColor = System.Drawing.Color.White;
             this.btnExportCSVMain.Image = global::HANACANPC.ResourceImages.Download_32x32;
             this.btnExportCSVMain.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportCSVMain.Location = new System.Drawing.Point(1320, 183);
+            this.btnExportCSVMain.Location = new System.Drawing.Point(980, 152);
             this.btnExportCSVMain.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportCSVMain.Name = "btnExportCSVMain";
-            this.btnExportCSVMain.Size = new System.Drawing.Size(178, 59);
+            this.btnExportCSVMain.Size = new System.Drawing.Size(109, 43);
             this.btnExportCSVMain.TabIndex = 6;
             this.btnExportCSVMain.TabStop = false;
             this.btnExportCSVMain.Text = "Export";
@@ -486,14 +487,14 @@ namespace HANACANPC._01_LogData
             // 
             this.btnExportCSVError.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExportCSVError.BackColor = System.Drawing.Color.Green;
-            this.btnExportCSVError.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.btnExportCSVError.Font = new System.Drawing.Font("Tahoma", 10F, System.Drawing.FontStyle.Bold);
             this.btnExportCSVError.ForeColor = System.Drawing.Color.White;
             this.btnExportCSVError.Image = global::HANACANPC.ResourceImages.Download_32x32;
             this.btnExportCSVError.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExportCSVError.Location = new System.Drawing.Point(1551, 183);
+            this.btnExportCSVError.Location = new System.Drawing.Point(1106, 152);
             this.btnExportCSVError.Margin = new System.Windows.Forms.Padding(4);
             this.btnExportCSVError.Name = "btnExportCSVError";
-            this.btnExportCSVError.Size = new System.Drawing.Size(224, 59);
+            this.btnExportCSVError.Size = new System.Drawing.Size(140, 43);
             this.btnExportCSVError.TabIndex = 7;
             this.btnExportCSVError.TabStop = false;
             this.btnExportCSVError.Text = "Export Error";
@@ -503,9 +504,10 @@ namespace HANACANPC._01_LogData
             // 
             // frmCompensationLog
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1869, 894);
+            this.Appearance.Options.UseFont = true;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1278, 736);
             this.Controls.Add(this.btnExportCSVError);
             this.Controls.Add(this.btnExportCSVMain);
             this.Controls.Add(this.btnSearch);
@@ -519,6 +521,7 @@ namespace HANACANPC._01_LogData
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.labelControl1);
+            this.Font = new System.Drawing.Font("Arial", 10F);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmCompensationLog";
             this.Text = "Compensation LogData";

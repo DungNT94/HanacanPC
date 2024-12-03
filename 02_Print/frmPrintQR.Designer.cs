@@ -41,7 +41,6 @@ namespace HANACANPC._02_Print
             this.repositoryItemCheckEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.repositoryItemCheckEdit2 = new DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit();
             this.btnRefresh = new System.Windows.Forms.Button();
-            this.CbxPrinter = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewPrintQR)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemCheckedComboBoxEdit1)).BeginInit();
@@ -52,21 +51,21 @@ namespace HANACANPC._02_Print
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(18, 23);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(18, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 29);
+            this.label1.Size = new System.Drawing.Size(305, 27);
             this.label1.TabIndex = 22;
             this.label1.Text = "Print Drawer and Case QR ";
             // 
             // btnPrint
             // 
             this.btnPrint.Image = global::HANACANPC.ResourceImages.PrintButton;
-            this.btnPrint.Location = new System.Drawing.Point(528, 12);
+            this.btnPrint.Location = new System.Drawing.Point(361, 16);
             this.btnPrint.Margin = new System.Windows.Forms.Padding(4);
             this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(196, 58);
+            this.btnPrint.Size = new System.Drawing.Size(113, 40);
             this.btnPrint.TabIndex = 32;
             this.btnPrint.UseVisualStyleBackColor = true;
             this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
@@ -83,7 +82,7 @@ namespace HANACANPC._02_Print
             | System.Windows.Forms.AnchorStyles.Right)));
             this.gridControl2.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gridControl2.Location = new System.Drawing.Point(48, 109);
+            this.gridControl2.Location = new System.Drawing.Point(33, 70);
             this.gridControl2.MainView = this.gridViewPrintQR;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Name = "gridControl2";
@@ -91,7 +90,7 @@ namespace HANACANPC._02_Print
             this.repositoryItemCheckedComboBoxEdit1,
             this.repositoryItemCheckEdit1,
             this.repositoryItemCheckEdit2});
-            this.gridControl2.Size = new System.Drawing.Size(1335, 508);
+            this.gridControl2.Size = new System.Drawing.Size(1310, 580);
             this.gridControl2.TabIndex = 33;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridViewPrintQR});
@@ -114,8 +113,6 @@ namespace HANACANPC._02_Print
             this.gridViewPrintQR.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus;
             this.gridViewPrintQR.GridControl = this.gridControl2;
             this.gridViewPrintQR.Name = "gridViewPrintQR";
-            this.gridViewPrintQR.OptionsSelection.MultiSelect = true;
-            this.gridViewPrintQR.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CheckBoxRowSelect;
             this.gridViewPrintQR.OptionsView.BestFitMode = DevExpress.XtraGrid.Views.Grid.GridBestFitMode.Full;
             this.gridViewPrintQR.OptionsView.ColumnHeaderAutoHeight = DevExpress.Utils.DefaultBoolean.True;
             this.gridViewPrintQR.OptionsView.ShowGroupPanel = false;
@@ -134,7 +131,7 @@ namespace HANACANPC._02_Print
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.VisibleIndex = 0;
             this.gridColumn2.Width = 252;
             // 
             // gridColumn3
@@ -149,7 +146,7 @@ namespace HANACANPC._02_Print
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.VisibleIndex = 1;
             this.gridColumn3.Width = 922;
             // 
             // repositoryItemCheckedComboBoxEdit1
@@ -182,29 +179,19 @@ namespace HANACANPC._02_Print
             this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.Font = new System.Drawing.Font("Tahoma", 11F);
             this.btnRefresh.Image = global::HANACANPC.ResourceImages._52352_refresh_icon;
-            this.btnRefresh.Location = new System.Drawing.Point(1290, 121);
+            this.btnRefresh.Location = new System.Drawing.Point(1277, 84);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(56, 44);
+            this.btnRefresh.Size = new System.Drawing.Size(48, 39);
             this.btnRefresh.TabIndex = 44;
             this.btnRefresh.UseVisualStyleBackColor = true;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // CbxPrinter
-            // 
-            this.CbxPrinter.FormattingEnabled = true;
-            this.CbxPrinter.Location = new System.Drawing.Point(773, 44);
-            this.CbxPrinter.Name = "CbxPrinter";
-            this.CbxPrinter.Size = new System.Drawing.Size(212, 26);
-            this.CbxPrinter.TabIndex = 45;
-            this.CbxPrinter.SelectedIndexChanged += new System.EventHandler(this.CbxPrinter_SelectedIndexChanged);
-            // 
             // frmPrintQR
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1442, 679);
-            this.Controls.Add(this.CbxPrinter);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(1378, 679);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.gridControl2);
             this.Controls.Add(this.btnPrint);
@@ -236,6 +223,5 @@ namespace HANACANPC._02_Print
         public DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit1;
         private DevExpress.XtraEditors.Repository.RepositoryItemCheckEdit repositoryItemCheckEdit2;
         private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.ComboBox CbxPrinter;
     }
 }

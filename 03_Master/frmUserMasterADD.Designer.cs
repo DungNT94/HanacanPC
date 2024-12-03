@@ -44,9 +44,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnSave.BackColor = System.Drawing.Color.Silver;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnSave.Location = new System.Drawing.Point(322, 229);
+            this.btnSave.Location = new System.Drawing.Point(483, 317);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(112, 41);
+            this.btnSave.Size = new System.Drawing.Size(168, 57);
             this.btnSave.TabIndex = 14;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -55,9 +56,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnCancel.Location = new System.Drawing.Point(107, 229);
+            this.btnCancel.Location = new System.Drawing.Point(160, 317);
+            this.btnCancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(112, 41);
+            this.btnCancel.Size = new System.Drawing.Size(168, 57);
             this.btnCancel.TabIndex = 13;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -66,7 +68,8 @@ namespace HANACANPC._03_Master
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label3.Location = new System.Drawing.Point(12, 106);
+            this.label3.Location = new System.Drawing.Point(18, 147);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 22);
             this.label3.TabIndex = 11;
@@ -76,7 +79,8 @@ namespace HANACANPC._03_Master
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 13F);
-            this.label2.Location = new System.Drawing.Point(12, 68);
+            this.label2.Location = new System.Drawing.Point(18, 94);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 22);
             this.label2.TabIndex = 9;
@@ -86,7 +90,8 @@ namespace HANACANPC._03_Master
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
-            this.label1.Location = new System.Drawing.Point(10, 15);
+            this.label1.Location = new System.Drawing.Point(15, 21);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 33);
             this.label1.TabIndex = 8;
@@ -94,23 +99,25 @@ namespace HANACANPC._03_Master
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(271, 108);
+            this.txtUserName.Location = new System.Drawing.Point(406, 150);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(247, 20);
+            this.txtUserName.Size = new System.Drawing.Size(370, 24);
             this.txtUserName.TabIndex = 12;
             // 
             // txtUserCode
             // 
-            this.txtUserCode.Location = new System.Drawing.Point(271, 71);
+            this.txtUserCode.Location = new System.Drawing.Point(406, 98);
+            this.txtUserCode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserCode.Name = "txtUserCode";
-            this.txtUserCode.Size = new System.Drawing.Size(247, 20);
+            this.txtUserCode.Size = new System.Drawing.Size(370, 24);
             this.txtUserCode.TabIndex = 10;
             // 
             // frmUserMasterADD
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 285);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(792, 395);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.txtUserName);
@@ -118,6 +125,7 @@ namespace HANACANPC._03_Master
             this.Controls.Add(this.txtUserCode);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmUserMasterADD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add";

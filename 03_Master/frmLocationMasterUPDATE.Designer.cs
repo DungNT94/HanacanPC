@@ -49,20 +49,20 @@ namespace HANACANPC._03_Master
             // 
             // txtSecurityBoxIP
             // 
-            this.txtSecurityBoxIP.Location = new System.Drawing.Point(384, 236);
+            this.txtSecurityBoxIP.Location = new System.Drawing.Point(299, 183);
             this.txtSecurityBoxIP.Margin = new System.Windows.Forms.Padding(4);
             this.txtSecurityBoxIP.Name = "txtSecurityBoxIP";
-            this.txtSecurityBoxIP.Size = new System.Drawing.Size(370, 24);
+            this.txtSecurityBoxIP.Size = new System.Drawing.Size(287, 24);
             this.txtSecurityBoxIP.TabIndex = 52;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 13F);
-            this.label5.Location = new System.Drawing.Point(57, 238);
+            this.label5.Font = new System.Drawing.Font("Arial", 12F);
+            this.label5.Location = new System.Drawing.Point(47, 186);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(208, 21);
+            this.label5.Size = new System.Drawing.Size(181, 18);
             this.label5.TabIndex = 51;
             this.label5.Text = "Security1 box IP address";
             // 
@@ -70,10 +70,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnSave.BackColor = System.Drawing.Color.Silver;
             this.btnSave.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnSave.Location = new System.Drawing.Point(190, 462);
+            this.btnSave.Location = new System.Drawing.Point(140, 368);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(168, 57);
+            this.btnSave.Size = new System.Drawing.Size(147, 57);
             this.btnSave.TabIndex = 48;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -83,10 +83,10 @@ namespace HANACANPC._03_Master
             // 
             this.btnCancel.BackColor = System.Drawing.Color.Silver;
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnCancel.Location = new System.Drawing.Point(486, 462);
+            this.btnCancel.Location = new System.Drawing.Point(387, 368);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(168, 57);
+            this.btnCancel.Size = new System.Drawing.Size(154, 57);
             this.btnCancel.TabIndex = 47;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -94,51 +94,51 @@ namespace HANACANPC._03_Master
             // 
             // txtLocationName
             // 
-            this.txtLocationName.Location = new System.Drawing.Point(383, 182);
+            this.txtLocationName.Location = new System.Drawing.Point(299, 140);
             this.txtLocationName.Margin = new System.Windows.Forms.Padding(4);
             this.txtLocationName.Name = "txtLocationName";
-            this.txtLocationName.Size = new System.Drawing.Size(370, 24);
+            this.txtLocationName.Size = new System.Drawing.Size(287, 24);
             this.txtLocationName.TabIndex = 46;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial", 13F);
-            this.label3.Location = new System.Drawing.Point(57, 184);
+            this.label3.Font = new System.Drawing.Font("Arial", 12F);
+            this.label3.Location = new System.Drawing.Point(48, 143);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(132, 21);
+            this.label3.Size = new System.Drawing.Size(115, 18);
             this.label3.TabIndex = 45;
             this.label3.Text = "Loaction name:";
             // 
             // txtManagementCode
             // 
             this.txtManagementCode.Enabled = false;
-            this.txtManagementCode.Location = new System.Drawing.Point(383, 131);
+            this.txtManagementCode.Location = new System.Drawing.Point(299, 97);
             this.txtManagementCode.Margin = new System.Windows.Forms.Padding(4);
             this.txtManagementCode.Name = "txtManagementCode";
-            this.txtManagementCode.Size = new System.Drawing.Size(370, 24);
+            this.txtManagementCode.Size = new System.Drawing.Size(287, 24);
             this.txtManagementCode.TabIndex = 44;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 13F);
-            this.label2.Location = new System.Drawing.Point(57, 133);
+            this.label2.Font = new System.Drawing.Font("Arial", 12F);
+            this.label2.Location = new System.Drawing.Point(48, 100);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(163, 21);
+            this.label2.Size = new System.Drawing.Size(142, 18);
             this.label2.TabIndex = 43;
             this.label2.Text = "Management code:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 20F);
+            this.label1.Font = new System.Drawing.Font("Tahoma", 16F);
             this.label1.Location = new System.Drawing.Point(15, 16);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(412, 66);
+            this.label1.Size = new System.Drawing.Size(338, 54);
             this.label1.TabIndex = 42;
             this.label1.Text = "Edit location/Drawer/Case master\r\n(Sửa Vị trí/Ngăn/Hộp)";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -147,10 +147,10 @@ namespace HANACANPC._03_Master
             // 
             this.groupBox1.Controls.Add(this.rdoOneTier);
             this.groupBox1.Controls.Add(this.rdoTwoTier);
-            this.groupBox1.Font = new System.Drawing.Font("Arial", 13F);
-            this.groupBox1.Location = new System.Drawing.Point(51, 299);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 12F);
+            this.groupBox1.Location = new System.Drawing.Point(41, 247);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(736, 136);
+            this.groupBox1.Size = new System.Drawing.Size(585, 100);
             this.groupBox1.TabIndex = 55;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tier type";
@@ -159,7 +159,7 @@ namespace HANACANPC._03_Master
             // 
             this.rdoOneTier.AutoSize = true;
             this.rdoOneTier.Font = new System.Drawing.Font("Arial", 9.5F);
-            this.rdoOneTier.Location = new System.Drawing.Point(22, 89);
+            this.rdoOneTier.Location = new System.Drawing.Point(22, 51);
             this.rdoOneTier.Name = "rdoOneTier";
             this.rdoOneTier.Size = new System.Drawing.Size(454, 20);
             this.rdoOneTier.TabIndex = 57;
@@ -171,7 +171,7 @@ namespace HANACANPC._03_Master
             // 
             this.rdoTwoTier.AutoSize = true;
             this.rdoTwoTier.Font = new System.Drawing.Font("Arial", 9.5F);
-            this.rdoTwoTier.Location = new System.Drawing.Point(22, 48);
+            this.rdoTwoTier.Location = new System.Drawing.Point(22, 25);
             this.rdoTwoTier.Name = "rdoTwoTier";
             this.rdoTwoTier.Size = new System.Drawing.Size(330, 20);
             this.rdoTwoTier.TabIndex = 56;
@@ -181,9 +181,9 @@ namespace HANACANPC._03_Master
             // 
             // frmLocationMasterUPDATE
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 532);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.ClientSize = new System.Drawing.Size(699, 458);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txtSecurityBoxIP);
             this.Controls.Add(this.label5);
