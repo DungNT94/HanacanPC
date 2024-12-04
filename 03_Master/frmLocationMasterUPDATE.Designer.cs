@@ -62,9 +62,9 @@ namespace HANACANPC._03_Master
             this.label5.Location = new System.Drawing.Point(47, 186);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(181, 18);
+            this.label5.Size = new System.Drawing.Size(172, 18);
             this.label5.TabIndex = 51;
-            this.label5.Text = "Security1 box IP address";
+            this.label5.Text = "Security box IP address";
             // 
             // btnSave
             // 

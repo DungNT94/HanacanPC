@@ -261,8 +261,14 @@ namespace HANACANPC._00_Login
             this.barBtnWorkProgress.Caption = "Tổng quan tiến độ công việc\r\nWork progress";
             this.barBtnWorkProgress.Id = 1;
             this.barBtnWorkProgress.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barBtnWorkProgress.ImageOptions.SvgImage")));
+            this.barBtnWorkProgress.ItemAppearance.Disabled.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnWorkProgress.ItemAppearance.Disabled.Options.UseFont = true;
+            this.barBtnWorkProgress.ItemAppearance.Hovered.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnWorkProgress.ItemAppearance.Hovered.Options.UseFont = true;
             this.barBtnWorkProgress.ItemAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
             this.barBtnWorkProgress.ItemAppearance.Normal.Options.UseFont = true;
+            this.barBtnWorkProgress.ItemAppearance.Pressed.Font = new System.Drawing.Font("Arial", 10F);
+            this.barBtnWorkProgress.ItemAppearance.Pressed.Options.UseFont = true;
             this.barBtnWorkProgress.ItemInMenuAppearance.Normal.Font = new System.Drawing.Font("Arial", 10F);
             this.barBtnWorkProgress.ItemInMenuAppearance.Normal.Options.UseFont = true;
             this.barBtnWorkProgress.LargeWidth = 190;
@@ -606,12 +612,14 @@ namespace HANACANPC._00_Login
             // frmMain
             // 
             this.AllowFormGlass = DevExpress.Utils.DefaultBoolean.True;
+            this.Appearance.Options.UseFont = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1278, 767);
             this.Controls.Add(this.backstageViewControl1);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
+            this.Font = new System.Drawing.Font("Arial", 10F);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmMain";

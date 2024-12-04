@@ -261,8 +261,13 @@ namespace HANACANPC._03_Master
         //Sự kiện nhập khác ký tự cho phép
         private void txtManagementCode_KeyPress(object sender, KeyPressEventArgs e)
         {
-            // Chỉ cho phép nhập chữ cái, số và dấu gạch dưới
-            if (!char.IsLetterOrDigit(e.KeyChar) && e.KeyChar != '_' && e.KeyChar != '\b')
+            //// Chỉ cho phép nhập chữ cái, số và dấu gạch dưới
+            //if (!char.IsDigit(e.KeyChar) && e.KeyChar != '_' && e.KeyChar != '\b')
+            //{
+            //    e.Handled = true; // Ngăn chặn ký tự không hợp lệ được thêm vào TextBox
+            //}
+            // Chỉ cho phép nhập Số
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '\b')
             {
                 e.Handled = true; // Ngăn chặn ký tự không hợp lệ được thêm vào TextBox
             }

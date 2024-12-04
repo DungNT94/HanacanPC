@@ -65,6 +65,7 @@ namespace HANACANPC._00_Login
             this.txtPassSetting.Location = new System.Drawing.Point(13, 21);
             this.txtPassSetting.Margin = new System.Windows.Forms.Padding(4);
             this.txtPassSetting.Name = "txtPassSetting";
+            this.txtPassSetting.Properties.PasswordChar = '*';
             this.txtPassSetting.Size = new System.Drawing.Size(194, 24);
             this.txtPassSetting.TabIndex = 2;
             this.txtPassSetting.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtPassSetting_KeyDown);
