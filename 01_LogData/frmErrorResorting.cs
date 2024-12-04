@@ -73,20 +73,46 @@ namespace HANACANPC._01_LogData
         ////Nhấn Export ra danh sách lỗi
         private void btnExportCSVError_Click(object sender, EventArgs e)
         {
-            // Lấy thời gian hiện tại
-            DateTime currentTime = DateTime.Now;
-            // Định dạng ngày tháng năm: dd/MM/yyyy
-            string ExportTime = currentTime.ToString("dd_MM_yyyy_HHmmss");
-            string filePath = "..\\..\\..\\..\\Export\\ResortingLogErrorDataExport\\" + ExportTime + "_ResortingLogErrorSubsetData.csv";
+            //// Lấy thời gian hiện tại
+            //DateTime currentTime = DateTime.Now;
+            //// Định dạng ngày tháng năm: dd/MM/yyyy
+            //string ExportTime = currentTime.ToString("dd_MM_yyyy_HHmmss");
+            //string filePath = "..\\..\\..\\..\\Export\\ResortingLogErrorDataExport\\" + ExportTime + "_ResortingLogErrorSubsetData.csv";
 
-            // Tạo đối tượng ExportToCsvOptions để tùy chỉnh quá trình export
-            CsvExportOptions options = new CsvExportOptions();
-            options.TextExportMode = TextExportMode.Value; // Chỉ xuất giá trị ô
-            options.Encoding = Encoding.UTF8;
+            //// Tạo đối tượng ExportToCsvOptions để tùy chỉnh quá trình export
+            //CsvExportOptions options = new CsvExportOptions();
+            //options.TextExportMode = TextExportMode.Value; // Chỉ xuất giá trị ô
+            //options.Encoding = Encoding.UTF8;
 
-            // Export dữ liệu
-            gridControl2.ExportToCsv(filePath, options);
-            MessageBox.Show("Export thành công (Export successful)!");
+            //// Export dữ liệu
+            //gridControl2.ExportToCsv(filePath, options);
+            //MessageBox.Show("Export thành công (Export successful)!");
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV Files (*.csv)|*.csv"; // Chỉ cho phép lưu file CSV
+            saveFileDialog.Title = "Export File";
+            saveFileDialog.FileName = $"ResortingLogErrorSubsetData_{DateTime.Now:dd_MM_yyyy_HHmmss}.csv"; // Đặt tên file mặc định
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK) // Kiểm tra nếu người dùng nhấn Save
+            {
+                string filePath = saveFileDialog.FileName;
+
+                // Tạo đối tượng ExportToCsvOptions để tùy chỉnh quá trình export
+                CsvExportOptions options = new CsvExportOptions();
+                options.TextExportMode = TextExportMode.Value; // Chỉ xuất giá trị ô
+                options.Encoding = Encoding.UTF8;
+
+                try
+                {
+                    // Export dữ liệu
+                    gridControl2.ExportToCsv(filePath, options);
+                    MessageBox.Show("Export thành công (Export successful)!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Export failed: {ex.Message}");
+                }
+            }
         }
     }
 }

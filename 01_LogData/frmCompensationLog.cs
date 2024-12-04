@@ -333,23 +333,48 @@ namespace HANACANPC._01_LogData
 
 
         //Nhấn expot CSV để export toàn bộ bảng Compesation
-
+        
         private void btnExportCSVMain_Click(object sender, EventArgs e)
         {
-            // Lấy thời gian hiện tại
-            DateTime currentTime = DateTime.Now;
-            // Định dạng ngày tháng năm: dd/MM/yyyy
-            string ExportTime = currentTime.ToString("dd_MM_yyyy_HHmmss");
-            string filePath = "..\\..\\..\\..\\Export\\CompesationLogDataExport\\" + ExportTime + "_CompesationLogData.csv";
+            //// Lấy thời gian hiện tại
+            //DateTime currentTime = DateTime.Now;
+            //// Định dạng ngày tháng năm: dd/MM/yyyy
+            //string ExportTime = currentTime.ToString("dd_MM_yyyy_HHmmss");
+            //string filePath = "..\\..\\..\\..\\Export\\CompesationLogDataExport\\" + ExportTime + "_CompesationLogData.csv";
+            //// Tạo đối tượng ExportToCsvOptions để tùy chỉnh quá trình export
+            //CsvExportOptions options = new CsvExportOptions();
+            //options.TextExportMode = TextExportMode.Value; // Chỉ xuất giá trị ô
+            //options.Encoding = Encoding.UTF8;
 
-            // Tạo đối tượng ExportToCsvOptions để tùy chỉnh quá trình export
-            CsvExportOptions options = new CsvExportOptions();
-            options.TextExportMode = TextExportMode.Value; // Chỉ xuất giá trị ô
-            options.Encoding = Encoding.UTF8;
+            //// Export dữ liệu
+            //gridControl2.ExportToCsv(filePath, options);
+            //MessageBox.Show("Export thành công (Export successful)!");
+            // Sử dụng SaveFileDialog để lưu file
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "CSV Files (*.csv)|*.csv"; // Chỉ cho phép lưu file CSV
+            saveFileDialog.Title = "Export File";
+            saveFileDialog.FileName = $"CompensationLog_{DateTime.Now:dd_MM_yyyy_HHmmss}.csv"; // Đặt tên file mặc định
 
-            // Export dữ liệu
-            gridControl2.ExportToCsv(filePath, options);
-            MessageBox.Show("Export thành công (Export successful)!");
+            if (saveFileDialog.ShowDialog() == DialogResult.OK) // Kiểm tra nếu người dùng nhấn Save
+            {
+                string filePath = saveFileDialog.FileName;
+
+                // Tạo đối tượng ExportToCsvOptions để tùy chỉnh quá trình export
+                CsvExportOptions options = new CsvExportOptions();
+                options.TextExportMode = TextExportMode.Value; // Chỉ xuất giá trị ô
+                options.Encoding = Encoding.UTF8;
+
+                try
+                {
+                    // Export dữ liệu
+                    gridControl2.ExportToCsv(filePath, options);
+                    MessageBox.Show("Export thành công (Export successful)!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Export failed: {ex.Message}");
+                }
+            }
         }
 
 
@@ -359,13 +384,25 @@ namespace HANACANPC._01_LogData
         {
             if (gridViewCompensation.RowCount != 0)
             {
-                // Lấy thời gian hiện tại
-                DateTime currentTime = DateTime.Now;
-                // Định dạng ngày tháng năm: dd/MM/yyyy
-                string ExportTime = currentTime.ToString("dd_MM_yyyy_HHmmss");
-                string filePath = "..\\..\\..\\..\\Export\\CompesationLogErrorDataExport\\" + ExportTime + "_CompesationLogErrorALLData.csv";
-                ErrorComPensationTable();
-                ExporErrorTableToCSV(DtErrorComPensation, filePath);
+                //// Lấy thời gian hiện tại
+                //DateTime currentTime = DateTime.Now;
+                //// Định dạng ngày tháng năm: dd/MM/yyyy
+                //string ExportTime = currentTime.ToString("dd_MM_yyyy_HHmmss");
+                //string filePath = "..\\..\\..\\..\\Export\\CompesationLogErrorDataExport\\" + ExportTime + "_CompesationLogErrorALLData.csv";
+                //ErrorComPensationTable();
+                //ExporErrorTableToCSV(DtErrorComPensation, filePath);
+                // Tạo SaveFileDialog để người dùng chọn thư mục
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+                saveFileDialog1.Filter = "CSV files (*.csv)|*.csv";
+                saveFileDialog1.FileName = $"CompesationLogErrorALLData_{DateTime.Now:dd_MM_yyyy_HHmmss}.csv";
+                saveFileDialog1.Title = "Export File";
+
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string filePath = saveFileDialog1.FileName;
+                    ErrorComPensationTable();
+                    ExporErrorTableToCSV(DtErrorComPensation, filePath);
+                }
 
             }
             else

@@ -59,6 +59,7 @@ namespace HANACANPC._01_LogData
             this.btnSearch = new System.Windows.Forms.Button();
             this.btnExportCSVMain = new System.Windows.Forms.Button();
             this.btnExportCSVError = new System.Windows.Forms.Button();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCompensation)).BeginInit();
             this.panel2.SuspendLayout();
@@ -571,5 +572,6 @@ namespace HANACANPC._01_LogData
         private System.Windows.Forms.Button btnExportCSVMain;
         private System.Windows.Forms.Button btnExportCSVError;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
